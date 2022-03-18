@@ -18,17 +18,17 @@ body {
   max-width: 80em !important;
 }
 
-
+p {
+  line-height: 2em;
+  font-size: 1.4em;
+  margin: 0;
+  color: var(--c-text);
+}
 
 #about {
   min-height: 40em;
   padding: 5em 0;
-  p {
-    line-height: 2em;
-    font-size: 1.4em;
-    margin: 0;
-    color: var(--c-text);
-  }
+ 
 }
 
 #how-we-can-help {
@@ -37,23 +37,13 @@ body {
   border-bottom: 2px dashed var(--c-teal);
   min-height: 40em;
   padding: 5em 0;
-  p {
-    line-height: 2em;
-    font-size: 1.4em;
-    margin: 0;
-    color: var(--c-text);
-  }
+ 
 }
 
 #sign-up {
   min-height: 40em;
   padding: 5em 0;
-  p {
-    line-height: 2em;
-    font-size: 1.4em;
-    margin: 0;
-    color: var(--c-text);
-  }
+  
 }
 
 .half {

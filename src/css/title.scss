@@ -2,6 +2,9 @@
 
   header {
     min-height: 90vh;
+    @include respond(phone){
+      min-height: 60vh
+    }
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
   }
@@ -12,6 +15,9 @@
     position: relative;
     overflow: hidden;
     margin-top: var(--offset);
+    @include respond(phone) {
+      height: 90px;
+    }
   }
   
   .mask span {
@@ -19,10 +25,11 @@
     box-sizing: border-box;
     position: absolute;
     top: 100px;
+    @include respond(phone) {
+      top: 90px;
+    }
     padding-bottom: var(--offset);
-    
-    white-space: nowrap;
-    
+    white-space: nowrap;   
     background-size: 100% 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -49,6 +56,9 @@
     transition-property: opacity;
     
     height: 106px;
+    @include respond(phone) {
+      height: 90px;
+    }
     
     border-radius: 10px;
     

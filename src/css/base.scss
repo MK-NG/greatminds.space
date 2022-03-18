@@ -26,8 +26,11 @@
     line-height: 1.06;
     letter-spacing: -0.02em;
     color: var(--c-text);
-    padding-top: 20vh
-    
+    padding-top: 20vh;
+    @include respond(phone) {
+      font-size: 80px;
+      padding-top:0vh;
+    }
   }
 
   
