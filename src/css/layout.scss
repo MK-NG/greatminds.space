@@ -21,6 +21,11 @@ body {
 p {
   line-height: 2em;
   font-size: 1.4em;
+  padding-bottom: 1em;
+  @include respond(phone){
+    line-height: 1.5em;
+    font-size: 1.2em;
+  }
   margin: 0;
   color: var(--c-text);
 }
