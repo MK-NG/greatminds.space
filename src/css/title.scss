@@ -1,0 +1,114 @@
+
+
+  header {
+    min-height: 90vh;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+
+
+  .mask {
+    height: 106px;
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--offset);
+  }
+  
+  .mask span {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    padding-bottom: var(--offset);
+    
+    white-space: nowrap;
+    
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+  }
+  
+  .overlay, .overlay--two {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    
+    top: 0;
+    
+    background-image: inherit;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1);
+    animation-duration: 1s;
+    
+    transition-timing-function: cubic-bezier(0.45, 0, 0.2, 1);
+    transition-duration: .5s;
+    transition-property: opacity;
+    
+    height: 106px;
+    
+    border-radius: 10px;
+    
+    clip-path: inset(0 100% 0 0);
+    z-index: 1;
+  }
+  
+  :is(.overlay, .overlay--two).visible {
+    animation-name: swipe;
+  }
+  
+  .overlay--two.visible {
+    opacity: 0;
+  }
+  
+  @keyframes swipe {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    50% {
+      clip-path: inset(0 0 0 0);
+    }
+    100% {
+      clip-path: inset(0 0 0 100%);
+    }
+  }
+  
+  .mask span[data-show] {
+    transform: translateY(-100%);
+  }
+  
+  .mask span[data-up] {
+    transform: translateY(-200%);
+  }
+  
+  .mask span:nth-child(3) {
+    background-image: linear-gradient(45deg, #ED8D07 50%, #e68600 );
+  }
+  
+  .mask span:nth-child(4) {
+    background-image: linear-gradient(45deg, #F47EAB 50%, #e6739f);
+  }
+  
+  .mask span:nth-child(5) {
+    background-image: linear-gradient(45deg, #F4E461 50%, #eedb49);
+  }
+  
+  .mask span:nth-child(6) {
+    background-image: linear-gradient(45deg, #A993DD 50%, #9c81da);
+  }
+  
+  .mask span:nth-child(7) {
+    background-image: linear-gradient(45deg, #053964 50%, #011627);
+  }
+
+
+  .intro {
+    line-height: 2em;
+font-size: 1.6em;
+color: #222
+  }
+
+

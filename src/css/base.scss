@@ -1,0 +1,42 @@
+
+:root {
+    --offset: 6px;
+    --font-family-primary: "Work Sans", sans-serif;
+    --font-family-secondary: "Spline Sans", "Lora", "Fraunces", serif;
+    --font-family-tertiary: "Spline Sans", "IBM Plex Mono", "Space Mono", monospace;
+
+ 
+    --c-text: #011627;
+    --c-bg-secondary: #f5f4f4;
+    --c-black: #191717;
+    --c-grey: #E9E9E9;
+    --c-yellow: #F4E461;
+    --c-white: #ffffff;
+    --c-teal: #21C4D1;
+    --c-orange: #ED8D07; 
+  
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+  
+  
+  h1 {
+    font-size: 100px;
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: var(--c-text);
+    padding-top: 20vh
+    
+  }
+
+  
+  h2 {
+    color: var(--c-teal);
+    font-size: 40px;
+  }
+
+  h3 {
+    color: var(--c-orange);
+    font-size: 25px;
+  }
