@@ -34,15 +34,16 @@ p {
 #about {
   min-height: 40em;
   padding: 5em 0;
- 
-}
-
-#how-we-can-help {
   background-color: var(--c-bg-secondary);
   border-top: 2px dashed var(--c-teal);
   border-bottom: 2px dashed var(--c-teal);
-  min-height: 40em;
+}
+
+#how-we-can-help {
+min-height: 40em;
   padding: 5em 0;
+  border-bottom: 2px dashed var(--c-teal);
+
  
 }
 
@@ -56,9 +57,9 @@ p {
   box-sizing: border-box;
   width: 100%;
   @include on-breakpoint(tablet-up) {
-    padding-top: 10px;
-    width: 50%;
-  float: left;
+    width: 45%;
+    float: left;
+    margin-right: 40px;
 }
 }
 
@@ -70,9 +71,9 @@ p {
 }
 
 .habit-icon {
-  padding-top: 50px;
   display:block;
   margin:auto;
+  max-width: 100%;
 }
 
 .padding-top-m {
