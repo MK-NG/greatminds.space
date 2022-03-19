@@ -21,26 +21,25 @@
   
   
   h1 {
-    font-size: 100px;
+    font-size: 110px;
     font-family: "Work Sans", sans-serif;
     line-height: 1.06;
     letter-spacing: -0.02em;
     color: var(--c-text);
     padding-top: 20vh;
     @include respond(phone) {
-      font-size: 75px;
       padding-top:0vh;
     }
   }
 
   
   h2 {
-    color: var(--c-teal);
+    color: var(--c-orange);
     font-size: 40px;
   }
 
   h3 {
-    color: var(--c-orange);
+    color: var(--c-teal);
     font-size: 25px;
     margin-bottom: .5em;
   }

@@ -31,10 +31,17 @@ p {
   color: var(--c-text);
 }
 
+.intro {
+  line-height: 2em;
+  font-size: 1.6em;
+  color: #222
+}
+
 #about {
   min-height: 40em;
   padding: 5em 0;
   background-color: var(--c-bg-secondary);
+  // background: linear-gradient(90grad, var(--c-bg-secondary), rgb(206, 218, 238));
   border-top: 2px dashed var(--c-teal);
   border-bottom: 2px dashed var(--c-teal);
 }
