@@ -3,8 +3,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left:30px;
-  position: sticky;
-  top: 0;
+  @include on-breakpoint(mid){
+    position: sticky;
+    top: 0;
+  }
   background: var(--c-white);
 }
 
