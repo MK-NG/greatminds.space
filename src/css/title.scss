@@ -16,7 +16,7 @@
     overflow: hidden;
     margin-top: var(--offset);
     @include respond(phone) {
-      height: 118px;
+      height: 90px;
     }
   }
   
@@ -25,6 +25,9 @@
     box-sizing: border-box;
     position: absolute;
     top: 115px;
+    @include respond(phone) {
+      top: 90px;
+    }
     padding-bottom: var(--offset);
     white-space: nowrap;   
     background-size: 100% 100%;
@@ -48,6 +51,9 @@
     transition-duration: .5s;
     transition-property: opacity;   
     height: 120px;  
+    @include respond(phone) {
+      height: 90px;
+    }
     border-radius: 10px;
     
     clip-path: inset(0 100% 0 0);

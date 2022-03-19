@@ -28,6 +28,7 @@
     color: var(--c-text);
     padding-top: 20vh;
     @include respond(phone) {
+    font-size: 80px;
       padding-top:0vh;
     }
   }
