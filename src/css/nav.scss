@@ -1,7 +1,7 @@
 
 .logo {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left:30px;
   position: sticky;
   top: 0;
@@ -10,7 +10,7 @@
 
 .menu {
   padding-left: 80%;
-  margin-top: -75px;
+  margin-top: -55px;
   @include on-breakpoint(mid){
     display: block;
   }
