@@ -7,10 +7,12 @@
 
  
     --c-text: #011627;
+    --c-heading: #053964;
     --c-bg-secondary: #F6F7FC;
     --c-black: #191717;
     --c-grey: #E9E9E9;
     --c-yellow: #F4E461;
+    --c-lilac: #A993DD;
     --c-white: #ffffff;
     --c-teal: #21C4D1;
     --c-orange: #ED8D07; 
@@ -35,7 +37,7 @@
 
   
   h2 {
-    color: var(--c-orange);
+    color: var(--c-heading);
     font-size: 40px;
   }
 

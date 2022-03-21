@@ -26,7 +26,7 @@
     position: absolute;
     top: 115px;
     @include respond(phone) {
-      top: 90px;
+      top: 88px;
     }
     padding-bottom: var(--offset);
     white-space: nowrap;   
