@@ -17,13 +17,18 @@
 }
 
   
-#email {
+.email-input {
+  height: 66px;
+  border: none;
+  margin-bottom: 2px;
   width: 75%;
   background: var(--c-white);
   font-family: inherit;
   font-size: 1.2em;
   @include respond(phone) {
     font-size: 0.8em;
+    height: 44px;
+
   }
   color: var(--c-text);
   font-weight: 400;
@@ -38,12 +43,13 @@
   height: 66px;
   @include respond(phone) {
     height: 44px;
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   background: var(--c-lilac);
   font-family: inherit;
   font-size: 1.3em;
   font-weight: bold;
+  border-radius: 0px;
   color: var(--c-white);
   letter-spacing: 1px;
   cursor: pointer;
@@ -62,3 +68,4 @@ input:focus {
   outline: 2px solid var(--c-orange);
   box-shadow: 0 0 2px var(--c-orange);
 }
+
