@@ -5,5 +5,22 @@
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:var(--c-white);
 }
+
+
+.social-media {
+  float: right;
+}
+
+.social-media-icon {
+  padding-bottom: 20px;
+  margin-right: 20px;
+}
+
+.social-media-icon:hover,
+.social-media-icon:focus {
+  transition: transform 200ms;
+  transform: translateY(-10px);
+}
+
