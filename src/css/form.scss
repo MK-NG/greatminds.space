@@ -11,6 +11,9 @@
   height: 66px;
   border: none;
   margin-bottom: 2px;
+  @include respond(phone) {
+    height: 44px;
+  }
 }
 
   
@@ -19,6 +22,9 @@
   background: var(--c-white);
   font-family: inherit;
   font-size: 1.2em;
+  @include respond(phone) {
+    font-size: 0.8em;
+  }
   color: var(--c-text);
   font-weight: 400;
   letter-spacing: 1px;
@@ -31,6 +37,10 @@
 #submit {
   width: 25%;
   height: 66px;
+  @include respond(phone) {
+    height: 44px;
+    font-size: 0.6em;
+  }
   background: var(--c-lilac);
   font-family: inherit;
   font-size: 1.3em;

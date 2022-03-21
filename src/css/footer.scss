@@ -1,6 +1,6 @@
 .site-footer
 {
-  background-color: var(--c-heading);
+  background-color: var(--c-navy);
   min-height: 200px;
   padding:45px 0 20px;
   font-size:15px;
@@ -16,6 +16,9 @@
 .social-media-icon {
   padding-bottom: 20px;
   margin-right: 20px;
+  a {
+    text-decoration: none;
+  }
 }
 
 .social-media-icon:hover,

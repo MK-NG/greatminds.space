@@ -5,8 +5,9 @@
     --font-family-secondary: "Spline Sans", "Lora", "Fraunces", serif;
     --font-family-tertiary: "Spline Sans", "IBM Plex Mono", "Space Mono", monospace;
 
- 
+  
     --c-text: #011627;
+    --c-navy: #011627;
     --c-heading: #053964;
     --c-bg-secondary: #F6F7FC;
     --c-black: #191717;
@@ -31,7 +32,7 @@
     padding-top: 20vh;
     @include respond(phone) {
     font-size: 75px;
-      padding-top:0vh;
+      padding-top:5vh;
     }
   }
 
