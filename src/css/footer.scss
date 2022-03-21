@@ -11,14 +11,20 @@
 
 .social-media {
   float: right;
+  @include respond(phone) {
+    float:left;
+    margin-top: 20px;
+  }
+  
+}
+
+.social-media-link {
+  text-decoration: none;
 }
 
 .social-media-icon {
   padding-bottom: 20px;
   margin-right: 20px;
-  a {
-    text-decoration: none;
-  }
 }
 
 .social-media-icon:hover,
