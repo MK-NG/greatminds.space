@@ -31,10 +31,17 @@ p {
   color: var(--c-text);
 }
 
+.intro {
+  line-height: 2em;
+  font-size: 1.6em;
+  color: #222
+}
+
 #about {
   min-height: 40em;
   padding: 5em 0;
   background-color: var(--c-bg-secondary);
+  // background: linear-gradient(90grad, var(--c-bg-secondary), rgb(206, 218, 238));
   border-top: 2px dashed var(--c-teal);
   border-bottom: 2px dashed var(--c-teal);
 }
@@ -48,7 +55,7 @@ min-height: 40em;
 }
 
 #sign-up {
-  min-height: 40em;
+  min-height: 30em;
   padding: 5em 0;
   background-color: var(--c-bg-secondary);
 }
@@ -59,7 +66,7 @@ min-height: 40em;
   @include on-breakpoint(tablet-up) {
     width: 45%;
     float: left;
-    margin-right: 40px;
+    margin-right: 35px;
 }
 }
 

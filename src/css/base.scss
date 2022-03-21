@@ -7,10 +7,12 @@
 
  
     --c-text: #011627;
+    --c-heading: #053964;
     --c-bg-secondary: #F6F7FC;
     --c-black: #191717;
     --c-grey: #E9E9E9;
     --c-yellow: #F4E461;
+    --c-lilac: #A993DD;
     --c-white: #ffffff;
     --c-teal: #21C4D1;
     --c-orange: #ED8D07; 
@@ -21,26 +23,26 @@
   
   
   h1 {
-    font-size: 100px;
+    font-size: 110px;
     font-family: "Work Sans", sans-serif;
     line-height: 1.06;
     letter-spacing: -0.02em;
     color: var(--c-text);
     padding-top: 20vh;
     @include respond(phone) {
-      font-size: 75px;
+    font-size: 75px;
       padding-top:0vh;
     }
   }
 
   
   h2 {
-    color: var(--c-teal);
+    color: var(--c-heading);
     font-size: 40px;
   }
 
   h3 {
-    color: var(--c-orange);
+    color: var(--c-teal);
     font-size: 25px;
     margin-bottom: .5em;
   }
