@@ -138,16 +138,15 @@ menu.addEventListener("mouseleave", () =>
 
  const s = document.querySelector('.Subscribe')
  const b = document.querySelector('button')
-
-signup.addEventListener('submit', e => {
+  signup.addEventListener('submit', e => {
   e.preventDefault();
 
   const formData = new FormData(signup);
   fetch(signup.getAttribute('sub'), {
     method: 'POST',
     headers: {
-      'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
-      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+      'Accept': 'application/x-www-form-urlencoded',
+      'Content-Type': 'application/x-www-form-urlencoded'
     },
     body: new URLSearchParams(formData).toString()
   })
