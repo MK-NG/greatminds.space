@@ -1,4 +1,15 @@
 
+
+// 
+
+
+
+// TITLE ANIMATION
+
+
+
+// 
+
 setInterval(function () {
   const overlay = document.querySelector('.overlay');
   const overlayTwo = document.querySelector('.overlay--two');
@@ -45,7 +56,16 @@ setInterval(function () {
   
 }, 2000)
 
+// 
 
+
+
+//  HEADER FADE OUT
+
+
+
+
+// 
 
 var header = $('header');
 var range = 200;
