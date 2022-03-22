@@ -4,10 +4,13 @@
   overflow: hidden;
   background: white;
   padding: 20px 60px 0px 60px;
-  @include respond(phone) {
-   padding-right: 25px;
-    }
   width: 70%;
+  @include respond(phone) {
+   padding: 5px;
+   padding-left: 25px;
+   width: 100%;
+   margin-left: -10px;
+    }
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -32,8 +35,8 @@
   z-index: 2;
   width: 80%;
   @include respond(phone) {
-    width: 70%;
-
+    width: 93%;
+    margin-left: -15px;
     }
   height: 46px;
   bottom: 60px;
