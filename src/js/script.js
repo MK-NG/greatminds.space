@@ -103,3 +103,28 @@ menu.addEventListener("mouseover", (event) => {
 menu.addEventListener("mouseleave", () =>
   menu.style.setProperty("--underline-width", "0")
 );
+
+
+// 
+
+
+// FORM
+
+
+
+// 
+
+const s = document.querySelector('.Subscribe')
+const b = document.querySelector('button')
+b.addEventListener('click', (e) => {
+  e.preventDefault()
+  s.classList.toggle('Subscribe--loading')
+  setTimeout(() => {
+     s.classList.remove('Subscribe--loading')
+     s.classList.toggle('Subscribe--complete')
+  }, 2000)
+  
+  setTimeout(() => {
+     s.classList.remove('Subscribe--complete')
+  }, 20000)
+})
