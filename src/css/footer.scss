@@ -29,7 +29,13 @@
 
 .social-media-icon:hover,
 .social-media-icon:focus {
-  transition: transform 200ms;
+  transition: transform 300ms;
   transform: translateY(-10px);
+}
+
+
+.footer-link {
+  color: white;
+  &:hover,  &:focus  {  border-bottom: 4px solid var(--c-orange);}
 }
 

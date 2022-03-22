@@ -83,8 +83,7 @@
   position: absolute;
   background-color: white;
   transition: color 500ms;
-  &:hover { color: var(--c-lilac); border-bottom: 2px solid var(--c-lilac);}
-  &:focus { color: var(--c-lilac); border-bottom: 2px solid var(--c-lilac);}
+  &:hover,  &:focus  { color: var(--c-lilac); border-bottom: 2px solid var(--c-lilac);}
 }
 
 .Loading {

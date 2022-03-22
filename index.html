@@ -107,7 +107,7 @@
     
 
     <section id="how-we-can-help">
-      <div data-aos="fade-up" data-aos-delay="50"  class="container overflow">
+      <div data-aos="fade-up" data-aos-delay="50" class="container overflow">
        
         <h2> How we can help </h2>
         <p> Another bit of text cos I used this one above </p>
@@ -159,7 +159,7 @@
           <p>Join us from the beginning.<br>
           Subscribe to receive updates and exclusive access to our beta!</p> 
           <form action="sub" name="signup" method="POST" data-netlify="true">
-            <input type="text" name="email" class="email-input" placeholder="Email Address" /> 
+            <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required  type="text" name="email" class="email-input" placeholder="Email Address" /> 
                     <button type="submit">Subscribe</button>
         </form>
           <div class="Loading">
@@ -196,7 +196,8 @@
   <div class="container">
     <div class="row">
         <div class="half">
-          ©2022 Great Minds
+          ©2022 Great Minds <br><br>
+          Contact us: <a class="footer-link" href="mailto:hello@greatminds.space">hello@greatminds.space</a>
         </div>
         <div class="half">
           <div class="social-media">
