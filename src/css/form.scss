@@ -83,7 +83,7 @@
   position: absolute;
   background-color: white;
   transition: color 500ms;
-  &:hover { color: var(--c-white); background-color: var(--c-lilac);}
+  &:hover { color: var(--c-lilac); border-bottom: 2px solid var(--c-lilac);}
   &:focus { color: var(--c-lilac); border-bottom: 2px solid var(--c-lilac);}
 }
 
@@ -157,7 +157,7 @@
 
     }
     display: inline-block;
-    background-color: var(--c-lilac);
+    background: linear-gradient(45deg, #A993DD 50%, #9c81da);
     
     svg {
       opacity: 0;
@@ -224,7 +224,7 @@
   }
 }
 
-.Container small {
+small {
   display:block;
   text-align: center !important;
   
