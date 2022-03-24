@@ -1,6 +1,6 @@
 
 .Subscribe {
-  height:400px;
+  height:500px;
   overflow: hidden;
   background: white;
   padding: 20px 60px 0px 60px;
@@ -137,7 +137,7 @@
 
 .Complete {
   left: 0;
-  top: 150px;
+  top: 200px;
   width: 100%;
   @include respond(phone) {
     width: 80%;
@@ -216,7 +216,7 @@
     opacity: 1;
     transform: scale(1);
   }
-  .Complete h4,
+  .Complete h3,
   .Complete span {
     opacity: 1;
     transform: translateY(0);
