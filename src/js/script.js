@@ -87,6 +87,15 @@ $(window).on('scroll', function () {
   
 });
 
+// 
+
+
+//  NAVIAGTION 
+
+
+
+// 
+
 const menu = document.querySelector(".menu__list");
 menu.addEventListener("mouseover", (event) => {
   if (event.target.classList.contains("menu__link")) {
@@ -111,29 +120,7 @@ menu.addEventListener("mouseleave", () =>
 // FORM
 
 
-
 // 
-
-// const s = document.querySelector('.Subscribe')
-// const b = document.querySelector('button')
-// b.addEventListener('click', (e) => {
-//   e.preventDefault()
-
-  
-
-//   s.classList.toggle('Subscribe--loading')
-//   setTimeout(() => {
-//     s.classList.remove('Subscribe--loading')
-//     s.classList.toggle('Subscribe--complete')
-//   }, 2000)
-  
-//   setTimeout(() => {
-//     s.classList.remove('Subscribe--complete')
-//   }, 20000)
-
-  
-// })
-
 
 
  const s = document.querySelector('.Subscribe')
