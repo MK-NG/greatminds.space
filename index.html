@@ -9,7 +9,7 @@
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
         <meta name="author" content="Great Minds">
         <meta name="description" content="Make creative thinking a habit.">
         <meta property="og:title" content="Great Minds | A Creative Habit Builder">
@@ -115,13 +115,13 @@
       
           <div class="row">
             <div class="half ">
-              <img class="habit-icon" src="/src/img/stack.png">
+              <img class="habit-icon" src="/src/img/stack.png" alt="illustration representing stack your habits">
               <h3> Stack your habits </h3>
               <p> Build on existing habits by practicing at a time of day that's convenient and repeatable. </p>
             </div>
           
             <div class="half">
-              <img class="habit-icon" src="/src/img/mental.png">
+              <img class="habit-icon" src="/src/img/mental.png" alt="illustration representing reduce your mental load">
               <h3> Reduce mental load  </h3>
               <p> Pick time based exercises that fit into your day.        </p>
             </div>
@@ -129,12 +129,12 @@
           
           <div  class="row ">
             <div class="half">
-              <img class="habit-icon" src="/src/img/blank-placeholder.png">
+              <img class="habit-icon" src="/src/img/blank-placeholder.png" alt="illustration representing use your why">
               <h3> Use your why  </h3>
               <p> Tell us your motivations for building these habits so we can remind them of that when they get hard.  </p>
             </div>
             <div class="half">
-              <img class="habit-icon" src="/src/img/blank-placeholder.png">
+              <img class="habit-icon" src="/src/img/blank-placeholder.png" alt="illustration representing celebrate your wins">
               <h3>Celebrate your wins  </h3>
               <p> Celebrate small milestones with streak tracking and regular reflection. </p>
             </div>
@@ -142,7 +142,7 @@
 
           <div  class="row ">
             <div class="half">
-              <img class="habit-icon" src="/src/img/blank-placeholder.png">
+              <img class="habit-icon" src="/src/img/blank-placeholder.png" alt="illustration representing choose what you do">
               <h3>Choose what you do   </h3>
               <p> Pick the exercises that appeal to you.        </p>
             </div>
@@ -159,7 +159,7 @@
           <p>Join us from the beginning.<br>
           Subscribe to receive updates and exclusive access to our beta!</p> 
           <form action="sub" name="signup" method="POST" data-netlify="true">
-            <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required  type="text" name="email" class="email-input" placeholder="Email Address" /> 
+            <input required  type="text" name="email" class="email-input" placeholder="Email Address" /> 
                     <button type="submit">Subscribe</button>
         </form>
           <div class="Loading">
@@ -181,7 +181,7 @@
                 </g>
               </svg>
             </div>
-            <h4>Thank you for subscribing</h4>
+            <h3>Thank you for subscribing</h3>
             <span>You will be the first to hear about our updates</span>
           </div>
         </div>
@@ -201,17 +201,17 @@
         </div>
         <div class="half">
           <div class="social-media">
-            <a class="social-media-link" href="https://twitter.com/creategreatminds"><svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social-media-link" href="https://twitter.com/creategreatminds"><span style="display:none"> Go to Twitter page for Great Minds - opens in a new tab</span><svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M23.643 4.937C22.808 5.307 21.911 5.557 20.968 5.67C21.941 5.08779 22.669 4.17147 23.016 3.092C22.1019 3.63499 21.1014 4.0172 20.058 4.222C19.3564 3.47287 18.4271 2.97633 17.4143 2.80947C16.4016 2.64262 15.3621 2.81479 14.4572 3.29925C13.5524 3.78371 12.8328 4.55336 12.4102 5.4887C11.9875 6.42405 11.8855 7.47275 12.12 8.472C10.2677 8.379 8.45564 7.89755 6.80144 7.05891C5.14723 6.22026 3.68785 5.04316 2.51801 3.604C2.11801 4.294 1.88801 5.094 1.88801 5.946C1.88757 6.713 2.07644 7.46824 2.43789 8.14473C2.79934 8.82122 3.32217 9.39804 3.96001 9.824C3.22029 9.80046 2.49688 9.60058 1.85001 9.241V9.301C1.84994 10.3767 2.22204 11.4194 2.90319 12.252C3.58434 13.0846 4.53258 13.6559 5.58701 13.869C4.9008 14.0547 4.18135 14.0821 3.48301 13.949C3.78051 14.8746 4.36001 15.684 5.14038 16.2639C5.92075 16.8438 6.86293 17.1652 7.83501 17.183C6.18485 18.4784 4.1469 19.1811 2.04901 19.178C1.67739 19.1781 1.30609 19.1564 0.937012 19.113C3.06649 20.4822 5.54535 21.2088 8.07701 21.206C16.647 21.206 21.332 14.108 21.332 7.952C21.332 7.752 21.327 7.55 21.318 7.35C22.2293 6.69097 23.0159 5.8749 23.641 4.94L23.643 4.937V4.937Z" fill="white"/>
               </svg>
             </a>          
             <a class="social-media-link" href="https://www.instagram.com/greatminds.space/">    
-                <svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <span style="display:none"> Go to Instagram page for page for Great Minds  - opens in a new tab </span><svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.9471 8.305C20.937 7.54763 20.7952 6.79778 20.5281 6.089C20.2964 5.49115 19.9426 4.9482 19.4892 4.49483C19.0359 4.04147 18.4929 3.68765 17.8951 3.456C17.1954 3.19336 16.4562 3.05134 15.7091 3.036C14.7471 2.993 14.4421 2.981 12.0001 2.981C9.55807 2.981 9.24507 2.981 8.29007 3.036C7.54323 3.05146 6.80442 3.19347 6.10507 3.456C5.50713 3.68749 4.96409 4.04125 4.5107 4.49464C4.05732 4.94802 3.70356 5.49106 3.47207 6.089C3.2089 6.78814 3.06719 7.52711 3.05307 8.274C3.01007 9.237 2.99707 9.542 2.99707 11.984C2.99707 14.426 2.99707 14.738 3.05307 15.694C3.06807 16.442 3.20907 17.18 3.47207 17.881C3.70395 18.4788 4.05797 19.0216 4.51151 19.4748C4.96505 19.928 5.50813 20.2816 6.10607 20.513C6.8035 20.7862 7.54244 20.9384 8.29107 20.963C9.25407 21.006 9.55907 21.019 12.0011 21.019C14.4431 21.019 14.7561 21.019 15.7111 20.963C16.4582 20.9483 17.1974 20.8066 17.8971 20.544C18.4948 20.3121 19.0376 19.9582 19.4909 19.5048C19.9442 19.0515 20.2982 18.5087 20.5301 17.911C20.7931 17.211 20.9341 16.473 20.9491 15.724C20.9921 14.762 21.0051 14.457 21.0051 12.014C21.0031 9.572 21.0031 9.262 20.9471 8.305V8.305ZM11.9941 16.602C9.44007 16.602 7.37107 14.533 7.37107 11.979C7.37107 9.425 9.44007 7.356 11.9941 7.356C13.2202 7.356 14.396 7.84307 15.263 8.71005C16.13 9.57703 16.6171 10.7529 16.6171 11.979C16.6171 13.2051 16.13 14.381 15.263 15.248C14.396 16.1149 13.2202 16.602 11.9941 16.602V16.602ZM16.8011 8.263C16.6595 8.26313 16.5192 8.23534 16.3884 8.18121C16.2575 8.12709 16.1386 8.04769 16.0385 7.94756C15.9384 7.84743 15.859 7.72854 15.8049 7.59769C15.7507 7.46684 15.7229 7.3266 15.7231 7.185C15.7231 7.0435 15.7509 6.90339 15.8051 6.77266C15.8592 6.64193 15.9386 6.52315 16.0387 6.4231C16.1387 6.32304 16.2575 6.24367 16.3882 6.18952C16.519 6.13537 16.6591 6.1075 16.8006 6.1075C16.9421 6.1075 17.0822 6.13537 17.2129 6.18952C17.3436 6.24367 17.4624 6.32304 17.5625 6.4231C17.6625 6.52315 17.7419 6.64193 17.7961 6.77266C17.8502 6.90339 17.8781 7.0435 17.8781 7.185C17.8781 7.781 17.3961 8.263 16.8011 8.263Z" fill="white"/>
                   <path d="M11.9942 14.982C13.6527 14.982 14.9972 13.6375 14.9972 11.979C14.9972 10.3205 13.6527 8.976 11.9942 8.976C10.3357 8.976 8.99121 10.3205 8.99121 11.979C8.99121 13.6375 10.3357 14.982 11.9942 14.982Z" fill="white"/>
                   </svg>
             </a>
-            <a class="social-media-link" href="https://www.linkedin.com/company/greatmindsorg/"> 
+            <a class="social-media-link" href="https://www.linkedin.com/company/greatmindsorg/"> <span style="display:none"> Go to LinkedIn page for Great Minds  - opens in a new tab </span>
               <svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.838C1 2.35053 1.19365 1.88303 1.53834 1.53834C1.88303 1.19364 2.35053 0.999999 2.838 0.999999H21.16C21.4016 0.999604 21.6409 1.04686 21.8641 1.13907C22.0874 1.23127 22.2903 1.36661 22.4612 1.53733C22.6322 1.70806 22.7677 1.91082 22.8602 2.13401C22.9526 2.35719 23.0001 2.59642 23 2.838V21.16C23.0003 21.4016 22.9529 21.6409 22.8606 21.8642C22.7683 22.0875 22.6328 22.2904 22.462 22.4613C22.2912 22.6322 22.0884 22.7678 21.8651 22.8602C21.6419 22.9526 21.4026 23.0001 21.161 23H2.838C2.59655 23 2.35746 22.9524 2.1344 22.86C1.91134 22.7676 1.70867 22.6321 1.53798 22.4613C1.3673 22.2905 1.23193 22.0878 1.13962 21.8647C1.04731 21.6416 0.999869 21.4025 1 21.161V2.838ZM9.708 9.388H12.687V10.884C13.117 10.024 14.217 9.25 15.87 9.25C19.039 9.25 19.79 10.963 19.79 14.106V19.928H16.583V14.822C16.583 13.032 16.153 12.022 15.061 12.022C13.546 12.022 12.916 13.111 12.916 14.822V19.928H9.708V9.388ZM4.208 19.791H7.416V9.25H4.208V19.79V19.791ZM7.875 5.812C7.88105 6.08667 7.83217 6.35979 7.73124 6.61531C7.63031 6.87084 7.47935 7.10363 7.28723 7.30003C7.09511 7.49643 6.8657 7.65247 6.61246 7.75901C6.35921 7.86554 6.08724 7.92042 5.8125 7.92042C5.53776 7.92042 5.26579 7.86554 5.01255 7.75901C4.7593 7.65247 4.52989 7.49643 4.33777 7.30003C4.14565 7.10363 3.99469 6.87084 3.89376 6.61531C3.79283 6.35979 3.74395 6.08667 3.75 5.812C3.76187 5.27285 3.98439 4.75979 4.36989 4.38268C4.75539 4.00558 5.27322 3.79442 5.8125 3.79442C6.35178 3.79442 6.86961 4.00558 7.25512 4.38268C7.64062 4.75979 7.86313 5.27285 7.875 5.812V5.812Z" fill="white"/>
                 </svg>
