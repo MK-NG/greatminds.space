@@ -4,9 +4,10 @@
   font-size: 16px;
   line-height: 1rem;
   padding-top: 20px;
-  padding-left:30px;
+  padding-left: 15px;
   padding-bottom: 15px;
   @include on-breakpoint(mid){
+    padding-left:30px;
     position: sticky;
     top: 0;
   }
@@ -19,10 +20,6 @@
   text-decoration: none;
 }
 
-.header-link {
-  color: var(--c-black);
-  text-decoration: none;
-}
 
 .sticker-great {
   width: fit-content;
@@ -35,13 +32,15 @@
 }
 
 .sticker-minds {
-margin-left: 30px;
+// margin-left: 30px;
+margin-left: 15px;
 width: fit-content;
 text-align: center;
 padding: 3px 7px;
 background: var(--c-white);
 box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 transform: rotate(-1.84deg);
+
 }
 
 .logo-img {
@@ -66,6 +65,10 @@ transform: rotate(-1.84deg);
 */
 .hover-switch:hover > img:last-of-type {
   opacity: 0;
+}
+.hover-switch:focus > img:last-of-type {
+  opacity: 0;
+
 }
 
 
@@ -110,3 +113,8 @@ transform: rotate(-1.84deg);
     text-decoration: none;
   }
   
+  .menu__link:focus {
+     border-bottom: 4px solid var(--c-orange);
+     margin-bottom: -5px;
+     outline: none;
+  }
