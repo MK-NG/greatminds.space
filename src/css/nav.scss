@@ -1,14 +1,73 @@
 
 .logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1rem;
+  padding-top: 20px;
   padding-left:30px;
+  padding-bottom: 15px;
   @include on-breakpoint(mid){
     position: sticky;
     top: 0;
   }
   background: var(--c-navy);
+  
 }
+
+.header-link {
+  color: var(--c-black);
+  text-decoration: none;
+}
+
+.header-link {
+  color: var(--c-black);
+  text-decoration: none;
+}
+
+.sticker-great {
+  width: fit-content;
+  text-align: center;
+  background: var(--c-white);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  transform: rotate(-3.92deg);
+  padding: 3px 7px;
+  margin-bottom: 5px;
+}
+
+.sticker-minds {
+margin-left: 30px;
+width: fit-content;
+text-align: center;
+padding: 3px 7px;
+background: var(--c-white);
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+transform: rotate(-1.84deg);
+}
+
+.logo-img {
+  width: 35px;
+  transform: translate(200%, -189%);
+}
+
+.hover-switch > img {
+  position: absolute;
+}
+/* 
+ * Show the last image by default
+*/
+.hover-switch > img:last-of-type {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+}
+/* 
+ * Hide the last image on hover
+*/
+.hover-switch:hover > img:last-of-type {
+  opacity: 0;
+}
+
 
 .menu {
   padding-left: 80%;
