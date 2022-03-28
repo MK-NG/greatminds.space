@@ -146,7 +146,7 @@ menu.addEventListener("mouseleave", () =>
     
     setTimeout(() => {
       s.classList.remove('Subscribe--complete')
-    }, 20000)
+    })
   });
 });
 
