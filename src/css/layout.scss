@@ -48,7 +48,11 @@ p {
 .expl {
   font-size: 1.4em;
   @include respond(phone){
+    display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
   font-size: 1.2em;
+  padding-top: 0em;
   }
   padding-top: 1.4em;
 }
