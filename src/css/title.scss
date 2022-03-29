@@ -1,9 +1,9 @@
 
 
   header {
-    min-height: 50vh;
+    min-height: 40vh;
     @include respond(phone){
-      min-height: 60vh
+      min-height: 20vh
     }
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
