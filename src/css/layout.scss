@@ -88,6 +88,10 @@ align-items: center; /* align vertical */
   background-color: var(--c-bg-secondary);
 }
 
+#intro {
+  padding-bottom: 50px;
+}
+
 .half {
   box-sizing: border-box;
   width: 100%;
@@ -139,19 +143,20 @@ align-items: center; /* align vertical */
 
 
 .slogan {
-  font-size: 5vh;
+  font-size: 50px;
   font-weight: bold;
-  max-width: 300px;
+  max-width: 315px;
   color: var(--c-teal);
   line-height:0.8em;
   margin-top: 10%;
   margin-left:auto;
   margin-right: auto;
   @include on-breakpoint(tablet-up) {
-    margin-top: 25%;
-    width: 420px;
-    max-width: 420px;
-    font-size: 7vh;
+    padding-left: 20px;
+    margin-top: 30%;
+    max-width: 443px;
+    font-size: 60px;
+
 
 }
 }
