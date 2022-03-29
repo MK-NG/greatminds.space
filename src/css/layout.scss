@@ -51,7 +51,6 @@ p {
     display: flex;
 justify-content: center; /* align horizontal */
 align-items: center; /* align vertical */
-  font-size: 1.2em;
   }
 }
 
@@ -137,3 +136,47 @@ align-items: center; /* align vertical */
 .overflow {
   overflow-x: hidden;
 }
+
+
+.slogan {
+  font-size: 5vh;
+  font-weight: bold;
+  max-width: 300px;
+  color: var(--c-teal);
+  line-height:0.8em;
+  margin-top: 10%;
+  margin-left:auto;
+  margin-right: auto;
+  @include on-breakpoint(tablet-up) {
+    margin-top: 25%;
+    width: 420px;
+    max-width: 420px;
+    font-size: 7vh;
+
+}
+}
+
+.optional {
+  -webkit-text-stroke: 2px #000;
+  color: var(--c-bg-secondary);
+
+}
+
+
+.optional{
+  position: relative;
+  display: inline-block; 
+  text-decoration: none; 
+
+}
+
+.optional:after {
+  content: ""; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(45%); 
+  border-top: 6px solid var(--c-orange);
+}
+

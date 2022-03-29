@@ -10,7 +10,6 @@
     padding-left:30px;
     position: sticky;
     top: 0;
-    background: var(--c-navy);
   }
   background: var(--c-white);
   
@@ -109,7 +108,7 @@ transform: rotate(-1.84deg);
     display: block;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    color: var(--c-white);
+    color: var(--c-text);
     font-family: "Spline Sans", "IBM Plex Mono", "Space Mono", monospace;
     text-decoration: none;
   }
