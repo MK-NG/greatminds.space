@@ -52,23 +52,23 @@ p {
 justify-content: center; /* align horizontal */
 align-items: center; /* align vertical */
   font-size: 1.2em;
-  padding-top: 0em;
   }
-  padding-top: 1.4em;
 }
 
 .intro {
   line-height: 2em;
   font-size: 1.6em;
+  @include respond(phone){
+  font-size: 1.4em;
+}
   color: var(--c-text);
 }
 
 .reasons{
- margin-top: 20px;
+ margin-top:0px;
 
 }
 #about {
-  min-height: 40em;
   padding: 5em 0;
   background-color: var(--c-bg-secondary);
   // background: linear-gradient(90grad, var(--c-bg-secondary), rgb(206, 218, 238));
@@ -77,7 +77,6 @@ align-items: center; /* align vertical */
 }
 
 #how-we-can-help {
-min-height: 40em;
   padding: 5em 0;
   border-bottom: 2px dashed var(--c-grey);
 

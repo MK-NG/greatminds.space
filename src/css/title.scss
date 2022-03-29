@@ -1,7 +1,7 @@
 
 
   header {
-    min-height: 90vh;
+    min-height: 50vh;
     @include respond(phone){
       min-height: 60vh
     }
