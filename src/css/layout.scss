@@ -152,7 +152,7 @@ align-items: center; /* align vertical */
   margin-left:auto;
   margin-right: auto;
   @include on-breakpoint(tablet-up) {
-    padding-left: 20px;
+    padding-left: 50px;
     margin-top: 30%;
     max-width: 443px;
     font-size: 60px;
