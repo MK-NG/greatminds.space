@@ -148,11 +148,12 @@
 }
 
 .Complete {
-  left: 0;
+  left: -25px;
   top: 220px;
   width: 100%;
   @include respond(phone) {
     width: 80%;
+    left: 0px;
     top: 250px;
      }
   padding: 0 30px;
