@@ -6,6 +6,7 @@ body {
   align-items: center;
   min-height: 85vh;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--c-bg)
   
 }
 
@@ -28,8 +29,12 @@ body {
 }
 
 .icon-image {
+  padding:2em;
   @include respond(phone){
     max-height: 75px;
+    padding: .5em;
+    padding-right: 2em;
+    min-width: 50px;
     }
 }
 
@@ -46,6 +51,7 @@ p {
 }
 
 .expl {
+  color: var(--c-text);
   font-size: 1.4em;
   @include respond(phone){
     display: flex;
@@ -105,9 +111,10 @@ align-items: center; /* align vertical */
 .onefifth {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom:30px;
   display: inline-flex;
+  margin-bottom:10px;
   @include on-breakpoint(tablet-up) {
+    margin-bottom:30px;
     text-align:center;
     width: 20%;
     display: block;
@@ -162,7 +169,7 @@ align-items: center; /* align vertical */
 }
 
 .optional {
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 2px var(--c-text);
   color: var(--c-bg-secondary);
 
 }

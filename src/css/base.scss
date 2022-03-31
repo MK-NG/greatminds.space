@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
     --offset: 6px;
@@ -9,6 +10,7 @@
     --c-text: #011627;
     --c-navy: #011627;
     --c-heading: #053964;
+    --c-bg: #ffffff;
     --c-bg-secondary: #F6F7FC;
     --c-black: #191717;
     --c-grey: #E9E9E9;
@@ -18,11 +20,18 @@
     --c-teal: #21C4D1;
     --c-orange: #ED8D07; 
     --c-pink: #F47EAB;
-
   
   }
+
+
+  html[data-theme='dark'] {
+    --c-bg: #131313;
+    --c-text: #fff;
+    --c-bg-secondary: #131313;
+    --c-heading: #fff;
+    --c-grey: #585858;
+  }
   
-  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
   
   
   h1 {
