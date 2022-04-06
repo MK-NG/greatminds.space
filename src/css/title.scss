@@ -1,7 +1,8 @@
 
 
   header {
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 830px;
     position: relative;
      top: -20px;
      background-image: url("/src/img/bg-2.png");
@@ -9,7 +10,7 @@
      background-position:center;
      @include respond(phone){
         background-image: url("/src/img/mobile-bg.png");
-     
+    min-height: 700px;
     }
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
