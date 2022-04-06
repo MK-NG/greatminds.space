@@ -6,6 +6,7 @@ body {
   align-items: center;
   min-height: 85vh;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--c-bg)
   
 }
 
@@ -28,8 +29,12 @@ body {
 }
 
 .icon-image {
+  padding:2em;
   @include respond(phone){
     max-height: 75px;
+    padding: .5em;
+    padding-right: 2em;
+    min-width: 50px;
     }
 }
 
@@ -46,6 +51,7 @@ p {
 }
 
 .expl {
+  color: var(--c-text);
   font-size: 1.4em;
   @include respond(phone){
     display: flex;
@@ -55,8 +61,10 @@ align-items: center; /* align vertical */
 }
 
 .intro {
-  line-height: 2em;
-  font-size: 1.6em;
+  padding-left: 8px;
+  line-height: 2em; 
+  font-family: var(--font-family-tertiary);
+  font-size: 2em;
   @include respond(phone){
   font-size: 1.4em;
 }
@@ -82,6 +90,10 @@ align-items: center; /* align vertical */
  
 }
 
+#top {
+  padding-left: 10px
+}
+
 #sign-up {
   min-height: 30em;
   padding: 5em 0;
@@ -90,6 +102,8 @@ align-items: center; /* align vertical */
 
 #intro {
   padding-bottom: 50px;
+  padding-top: 70px;
+  border-top: 2px dashed var(--c-grey)
 }
 
 .half {
@@ -105,9 +119,10 @@ align-items: center; /* align vertical */
 .onefifth {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom:30px;
   display: inline-flex;
+  margin-bottom:10px;
   @include on-breakpoint(tablet-up) {
+    margin-bottom:30px;
     text-align:center;
     width: 20%;
     display: block;
@@ -148,12 +163,12 @@ align-items: center; /* align vertical */
   max-width: 315px;
   color: var(--c-teal);
   line-height:0.8em;
-  margin-top: 10%;
+  margin-bottom: 50px;
   margin-left:auto;
   margin-right: auto;
   @include on-breakpoint(tablet-up) {
     padding-left: 50px;
-    margin-top: 30%;
+    margin-top: 25%;
     max-width: 443px;
     font-size: 60px;
 
@@ -162,7 +177,7 @@ align-items: center; /* align vertical */
 }
 
 .optional {
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 2px var(--c-text);
   color: var(--c-bg-secondary);
 
 }
@@ -185,3 +200,43 @@ align-items: center; /* align vertical */
   border-top: 6px solid var(--c-orange);
 }
 
+.cta {
+  border: 3px solid var(--c-black);
+  padding: .5em 1em;
+  font-size: 1.5em;
+  background: none;
+  margin-left: 8px;
+  border-radius: 10px; 
+  cursor: pointer;
+  &:hover, &:focus {
+  background: rgba(0, 0, 0, 0.065);
+  }
+
+}
+
+
+.see-more:hover{
+    fill: rgba(0, 0, 0, 0.065);
+  }
+
+
+
+.continue {
+  padding-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  margin-left: 15vw;
+  @include respond(phone) {
+margin-left: -15vh;
+  }
+
+  &:hover {
+    fill: rgba(0, 0, 0, 0.065);
+  }
+  
+  a {
+    color: var(--c-black);
+    text-decoration: none;
+  }
+}

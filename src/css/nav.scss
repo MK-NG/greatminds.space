@@ -1,22 +1,21 @@
 
-.logo {
+.heading {
   font-weight: 800;
   font-size: 16px;
   line-height: 1rem;
   padding-top: 20px;
-  padding-left: 15px;
   padding-bottom: 15px;
+  display: inline;
   @include on-breakpoint(mid){
-    padding-left:30px;
     position: sticky;
     top: 0;
   }
-  background: var(--c-bg-secondary);
-  border-bottom: 2px dashed var(--c-grey)
   
 }
 
 .header-link {
+  padding-left: 15px;
+
   color: var(--c-black);
   text-decoration: none;
 }
@@ -30,17 +29,25 @@
   transform: rotate(-3.92deg);
   padding: 3px 7px;
   margin-bottom: 5px;
+  margin-left: 50px;
+  @include respond(phone){
+ margin-left: 15px
+  }
 }
 
 .sticker-minds {
-// margin-left: 30px;
-margin-left: 15px;
 width: fit-content;
 text-align: center;
 padding: 3px 7px;
 background: var(--c-white);
 box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 transform: rotate(-1.84deg);
+margin-bottom: 20px;
+margin-left: 65px;
+@include respond(phone){
+  margin-left: 30px
+   }
+
 
 }
 
@@ -85,7 +92,7 @@ transform: rotate(-1.84deg);
 .menu__list {
   --underline-width: 0;
     --underline-offset-x: 0;
-    position: fixed;
+    position: relative;
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -100,7 +107,7 @@ transform: rotate(-1.84deg);
     height: 4px;
     width: var(--underline-width);
     transform: translateX(var(--underline-offset-x));
-    background-color: var(--c-orange);
+    background-color: var(--c-black);
     transition: transform 0.5s, width 0.5s;
     border-radius: 4px;
   }
@@ -109,13 +116,14 @@ transform: rotate(-1.84deg);
     display: block;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    color: var(--c-text);
+    font-weight: 400;
+    color: var(--c-white);
     font-family: "Spline Sans", "IBM Plex Mono", "Space Mono", monospace;
     text-decoration: none;
   }
   
   .menu__link:focus {
-     border-bottom: 4px solid var(--c-orange);
+     border-bottom: 4px solid var(--c-lilac);
      margin-bottom: -5px;
      outline: none;
   }

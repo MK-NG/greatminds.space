@@ -1,14 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Work+Sans:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
     --offset: 6px;
     --font-family-primary: "Work Sans", sans-serif;
     --font-family-secondary: "Spline Sans", "Lora", "Fraunces", serif;
-    --font-family-tertiary: "Spline Sans", "IBM Plex Mono", "Space Mono", monospace;
-
-  
+    --font-family-tertiary: "Poppins", "IBM Plex Mono", "Space Mono", monospace;
     --c-text: #011627;
     --c-navy: #011627;
     --c-heading: #053964;
+    --c-bg: #ffffff;
     --c-bg-secondary: #F6F7FC;
     --c-black: #191717;
     --c-grey: #E9E9E9;
@@ -18,31 +18,74 @@
     --c-teal: #21C4D1;
     --c-orange: #ED8D07; 
     --c-pink: #F47EAB;
-
   
   }
+
+
+  html[data-theme='dark'] {
+    --c-bg: #131313;
+    --c-text: #fff;
+    --c-bg-secondary: #131313;
+    --c-heading: #fff;
+    --c-grey: #585858;
+  }
   
-  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.phone {
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  margin-left:auto;
+  margin-right: auto;
+  width: 21rem;
+  height: 45rem;
+  // border: 3px solid var(--c-black);
+  opacity: 1;
   
-  
+  box-shadow: 0 4px 35px rgba(0,0,0,.1);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
   h1 {
     font-size: 110px;
     font-family: "Work Sans", sans-serif;
     line-height: 1.06;
     letter-spacing: -0.02em;
+    margin-bottom: 10px;
     color: var(--c-text);
-    padding-top: 10vh;
+    padding-top: 17vh;
     @include respond(phone) {
     font-size: 75px;
-      padding-top:5vh;
+      padding-top:6vh;
     }
   }
 
   
   h2 {
+  // font-family: var(--font-family-tertiary);
     color: var(--c-heading);
     font-size: 50px;
   }
+
+  h3
+  { 
+    font-size: 28px;
+    color: var(--c-white);
+    width: fit-content;
+    padding: .2em 0.6em;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 93%;
+    }
+
+    .bg-orange  { background: var(--c-orange); }
+    .bg-lilac  { background: var(--c-lilac); }
+    .bg-pink  { background: var(--c-pink); }
+
+
 
   .underline {
     background-image:linear-gradient(120deg, #F47EAB 50%, #e6739f);
@@ -61,12 +104,6 @@
   
   .underline-animation{
     animation: animatedBackground 1s cubic-bezier(0.064, 0.045, 0.355, 1) 0.5s forwards;
-  }
-
-  h3 {
-    color: var(--c-lilac);
-    font-size: 25px;
-    margin-bottom: .5em;
   }
 
 
