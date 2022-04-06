@@ -3,7 +3,7 @@
     --offset: 6px;
     --font-family-primary: "Work Sans", sans-serif;
     --font-family-secondary: "Spline Sans", "Lora", "Fraunces", serif;
-    --font-family-tertiary: "Spline Sans", "IBM Plex Mono", "Space Mono", monospace;
+    --font-family-tertiary: "Poppins", "IBM Plex Mono", "Space Mono", monospace;
 
   
     --c-text: #011627;
@@ -22,24 +22,44 @@
   
   }
   
-  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Work+Sans:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
   
+
+.phone {
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  margin-left:auto;
+  margin-right: auto;
+  width: 21rem;
+  height: 45rem;
+  // border: 3px solid var(--c-black);
+  opacity: 1;
   
+  box-shadow: 0 4px 35px rgba(0,0,0,.1);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
   h1 {
     font-size: 110px;
     font-family: "Work Sans", sans-serif;
     line-height: 1.06;
     letter-spacing: -0.02em;
+    margin-bottom: 10px;
     color: var(--c-text);
-    padding-top: 10vh;
+    padding-top: 17vh;
+    padding-left: 10px;
     @include respond(phone) {
     font-size: 75px;
-      padding-top:5vh;
+      padding-top:15vh;
     }
   }
 
   
   h2 {
+  // font-family: var(--font-family-tertiary);
     color: var(--c-heading);
     font-size: 50px;
   }
