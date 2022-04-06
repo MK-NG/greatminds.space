@@ -10,7 +10,7 @@
      background-position:center;
      @include respond(phone){
         background-image: url("/src/img/mobile-bg.png");
-    min-height: 650px;
+    min-height: 600px;
     }
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;

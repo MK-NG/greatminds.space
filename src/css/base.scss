@@ -57,7 +57,7 @@
     color: var(--c-text);
     padding-top: 17vh;
     @include respond(phone) {
-      margin-top: 20px;
+      margin-top: 10px;
     font-size: 75px;
       padding-top:0px;
     }
