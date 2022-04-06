@@ -220,6 +220,11 @@ align-items: center; /* align vertical */
     fill: rgba(0, 0, 0, 0.065);
   }
 
+  .see-more {
+    @include respond(phone) {
+      max-height: 30px;
+    }
+  }
 
 
 .continue {
@@ -229,7 +234,7 @@ align-items: center; /* align vertical */
   text-align: center;
   margin-left: 15vw;
   @include respond(phone) {
-margin-left: -25vh;
+margin-left: -15vh;
   }
 
   &:hover {
