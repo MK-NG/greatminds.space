@@ -232,11 +232,7 @@ align-items: center; /* align vertical */
   position: absolute;
   bottom: 20px;
   text-align: center;
-  margin-left: 15vw;
-  @include respond(phone) {
-margin-left: -15vh;
-  }
-
+  margin-left: -25px;
   &:hover {
     fill: rgba(0, 0, 0, 0.065);
   }
@@ -245,4 +241,8 @@ margin-left: -15vh;
     color: var(--c-black);
     text-decoration: none;
   }
+}
+
+.centre {
+  text-align: center;
 }
