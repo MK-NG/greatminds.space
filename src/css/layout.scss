@@ -202,6 +202,7 @@ align-items: center; /* align vertical */
 
 .cta {
   border: 3px solid var(--c-black);
+  color: var(--c-text);
   padding: .5em 1em;
   font-size: 1.5em;
   background: none;
@@ -228,7 +229,7 @@ align-items: center; /* align vertical */
   text-align: center;
   margin-left: 15vw;
   @include respond(phone) {
-margin-left: -15vh;
+margin-left: -25vh;
   }
 
   &:hover {
