@@ -4,10 +4,11 @@
     min-height: 100vh;
     position: relative;
      top: -20px;
-     background-image: url("/src/img/header-bg.png");
+     background-image: url("/src/img/bg-2.png");
      background-repeat:no-repeat;
-background-position:center;
-    @include respond(phone){
+     background-position:center;
+     @include respond(phone){
+        background-image: url("/src/img/mobile-bg.png");
      
     }
     margin: auto;
@@ -94,31 +95,31 @@ background-position:center;
   }
   
   .mask span:nth-child(3) {
-    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white) );
-    -webkit-text-fill-color: var(--c-text);
+    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal) );
+    -webkit-text-fill-color: var(--c-teal);
   }
   
   .mask span:nth-child(4) {
-    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white));
-    -webkit-text-fill-color: var(--c-text);
+    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal));
+    -webkit-text-fill-color: var(--c-teal);
 
   }
   
   .mask span:nth-child(5) {
-    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white));
-    -webkit-text-fill-color: var(--c-text);
+    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal));
+    -webkit-text-fill-color: var(--c-teal);
 
   }
   
   .mask span:nth-child(6) {
-    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white));
-    -webkit-text-fill-color: var(--c-text);
+    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal));
+    -webkit-text-fill-color: var(--c-teal);
 
   }
   
   .mask span:nth-child(7) {
-    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white));
-    -webkit-text-fill-color: var(--c-text);
+    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal));
+    -webkit-text-fill-color: var(--c-teal);
 
   }
 

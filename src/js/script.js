@@ -67,22 +67,22 @@ setInterval(function () {
 
 // 
 
-const menu = document.querySelector(".menu__list");
-menu.addEventListener("mouseover", (event) => {
-  if (event.target.classList.contains("menu__link")) {
-    menu.style.setProperty(
-      "--underline-width",
-      `${event.target.offsetWidth}px`
-    );
-    menu.style.setProperty(
-      "--underline-offset-x",
-      `${event.target.offsetLeft}px`
-    );
-  }
-});
-menu.addEventListener("mouseleave", () =>
-  menu.style.setProperty("--underline-width", "0")
-);
+// const menu = document.querySelector(".menu__list");
+// menu.addEventListener("mouseover", (event) => {
+//   if (event.target.classList.contains("menu__link")) {
+//     menu.style.setProperty(
+//       "--underline-width",
+//       `${event.target.offsetWidth}px`
+//     );
+//     menu.style.setProperty(
+//       "--underline-offset-x",
+//       `${event.target.offsetLeft}px`
+//     );
+//   }
+// });
+// menu.addEventListener("mouseleave", () =>
+//   menu.style.setProperty("--underline-width", "0")
+// );
 
 
 // 
@@ -163,21 +163,34 @@ observer.observe(document.querySelector('.underline-2'));
 // 
 
 
-var checkbox = document.querySelector('input[name=mode]');
+// var checkbox = document.querySelector('input[name=mode]');
 
-checkbox.addEventListener('change', function() {
-    if(this.checked) {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
+// checkbox.addEventListener('change', function() {
+//     if(this.checked) {
+//         trans()
+//         document.documentElement.setAttribute('data-theme', 'dark')
+//     } else {
+//         trans()
+//         document.documentElement.setAttribute('data-theme', 'light')
+//     }
+// })
+
+// let trans = () => {
+//   document.documentElement.classList.add('transition');
+//   window.setTimeout(() => {
+//       document.documentElement.classList.remove('transition');
+//   }, 1000)
+// }
+
+
+$(window).load(function(){
+  $('#wrapper').addClass('loaded');
 })
 
-let trans = () => {
-  document.documentElement.classList.add('transition');
-  window.setTimeout(() => {
-      document.documentElement.classList.remove('transition');
-  }, 1000)
-}
+$('.more-info').click(function(){
+  $("#card").toggleClass('flip');
+  $('#arrow').remove();
+});
+$('#background').click(function(){
+  $('#card').removeClass('flip');
+})

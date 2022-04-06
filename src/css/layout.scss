@@ -61,7 +61,7 @@ align-items: center; /* align vertical */
 }
 
 .intro {
-  padding-left: 18px;
+  padding-left: 8px;
   line-height: 2em; 
   font-family: var(--font-family-tertiary);
   font-size: 2em;
@@ -88,6 +88,10 @@ align-items: center; /* align vertical */
   border-bottom: 2px dashed var(--c-grey);
 
  
+}
+
+#top {
+  padding-left: 10px
 }
 
 #sign-up {
@@ -159,12 +163,12 @@ align-items: center; /* align vertical */
   max-width: 315px;
   color: var(--c-teal);
   line-height:0.8em;
-  margin-top: 10%;
+  margin-bottom: 50px;
   margin-left:auto;
   margin-right: auto;
   @include on-breakpoint(tablet-up) {
     padding-left: 50px;
-    margin-top: 30%;
+    margin-top: 25%;
     max-width: 443px;
     font-size: 60px;
 
@@ -196,3 +200,43 @@ align-items: center; /* align vertical */
   border-top: 6px solid var(--c-orange);
 }
 
+.cta {
+  border: 3px solid var(--c-black);
+  padding: .5em 1em;
+  font-size: 1.5em;
+  background: none;
+  margin-left: 8px;
+  border-radius: 10px; 
+  cursor: pointer;
+  &:hover, &:focus {
+  background: rgba(0, 0, 0, 0.065);
+  }
+
+}
+
+
+.see-more:hover{
+    fill: rgba(0, 0, 0, 0.065);
+  }
+
+
+
+.continue {
+  padding-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  margin-left: 15vw;
+  @include respond(phone) {
+margin-left: -15vh;
+  }
+
+  &:hover {
+    fill: rgba(0, 0, 0, 0.065);
+  }
+  
+  a {
+    color: var(--c-black);
+    text-decoration: none;
+  }
+}
