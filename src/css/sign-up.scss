@@ -1,0 +1,121 @@
+
+  
+  .btn-flip-extend, .btn-flip:hover, .btn-flip:focus {
+    background-color: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 1;
+  }  
+ 
+  
+  .card-container {
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .card-container:not(.manual-flip):hover .front {
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .card-container:not(.manual-flip):hover .back {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  .card-container.hover.manual-flip .front {
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .card-container.hover.manual-flip .back {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  
+  .card {
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transition: -moz-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: -o-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    margin: 0 auto;
+  }
+
+
+  .card .content {
+    background-color: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+
+  
+  .front {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transition: -moz-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: -o-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .back {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transition: -moz-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: -o-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+
+  .card-link {
+      text-decoration: underline;
+      color: var(--c-lilac);
+      font-weight: bold;
+      cursor: pointer;
+      float:right; 
+      bottom: 0;
+      &:hover,  &:focus  {  border-bottom: 4px solid var(--c-orange);}
+  }

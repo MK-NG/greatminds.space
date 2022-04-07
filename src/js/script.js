@@ -183,14 +183,12 @@ observer.observe(document.querySelector('.underline-2'));
 // }
 
 
-$(window).load(function(){
-  $('#wrapper').addClass('loaded');
-})
-
-$('.more-info').click(function(){
-  $("#card").toggleClass('flip');
-  $('#arrow').remove();
-});
-$('#background').click(function(){
-  $('#card').removeClass('flip');
-})
+function rotateCard(btn) {
+  var $card = $(btn).closest('.card-container');
+  console.log($card);
+  if ($card.hasClass('hover')) {
+    $card.removeClass('hover');
+  } else {
+    $card.addClass('hover');
+  }
+}

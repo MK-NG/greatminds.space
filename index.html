@@ -80,7 +80,7 @@
         <p>
          Great Minds gives you and your team the confidence to think creatively so you can: 
         </p>
-        
+      
           <div class="reasons">
           <div class="row">
             <div class="onefifth">
@@ -176,11 +176,35 @@
       <div data-aos="fade-up" data-aos-delay="50" class="container overflow">
        
         <h2> <span class="underline-2">How do we build habits?</span></h2>     
-          <div class="row">
-            <div class="half ">
+        <div class="row">
+          <div class="half ">
+              <div class="card-container manual-flip">
+                <div class="card">
+                  <div class="front">
+                    <div class="content">
               <img class="habit-icon" src="/src/img/stack.png" alt="illustration representing stack your habits">
-              <h3 class="bg-lilac"> Stack your habits </h3>
-              <p> We build on your existing habits by nudging you to practice at a time of day that's convenient and repeatable.               </p>
+              <h3 class="bg-lilac"> Stack your habits 
+              </h3>
+                      <p> We build on your existing habits by nudging you to practice at a time of day that's convenient and repeatable.               </p>
+                      <div class="footer">
+                        <a class="card-link" onclick="rotateCard(this)">
+                          The science
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back">                   
+                    <div class="content">
+                     <p> Your brain builds a network of ‘neurons’ to support things you do regularly i.e. your habits. You have habits you do every day without even thinking about it - for example, brushing your teeth. You can take advantage of these existing habits, (and their neuron networks) to build new ones. <a href="https://jamesclear.com/habit-stacking">Read more about habit stacking</a>.</p>
+                    </div>
+                    <div class="footer">
+                      <a class="card-link"  onclick="rotateCard(this)">
+                        Back
+                      </a>
+                    </div>
+                  </div>
+      </div>
+      </div>
             </div>
           
             <div class="half">
@@ -307,6 +331,16 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+
+  function rotateCard(btn) {
+  var $card = $(btn).closest('.card-container');
+  console.log($card);
+  if ($card.hasClass('hover')) {
+    $card.removeClass('hover');
+  } else {
+    $card.addClass('hover');
+  }
+}
 </script>
 
   </body>
