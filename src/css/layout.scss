@@ -158,12 +158,13 @@ align-items: center; /* align vertical */
 
 
 .slogan {
+  margin-bottom: 75px;
+  margin-top: 50px;
   font-size: 50px;
   font-weight: bold;
   max-width: 315px;
   color: var(--c-teal);
   line-height:0.8em;
-  margin-bottom: 50px;
   margin-left:auto;
   margin-right: auto;
   @include on-breakpoint(tablet-up) {

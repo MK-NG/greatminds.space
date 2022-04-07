@@ -37,6 +37,14 @@
 
 .footer-link {
   color: white;
-  &:hover,  &:focus  {  border-bottom: 4px solid var(--c-orange);}
+  text-decoration: none;
+  background-image: linear-gradient(120deg, #ED8D07 0%, #c77604 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 107%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 107%;
+  }
 }
 
