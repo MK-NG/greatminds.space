@@ -245,7 +245,7 @@ Array.from(
 
 					if (isPanelExpanded) {
 						panel.removeAttribute('hidden');
-            if(windowHeight<600){
+            if(windowHeight<900){
             window.scrollBy(0, 250);
             }
 						panel.animate({
