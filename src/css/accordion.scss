@@ -96,8 +96,10 @@ button[aria-expanded="true"] .chevron {
 }
 
 button[aria-expanded="true"] .habit-icon {
+  @include on-breakpoint(tablet-up){
   -webkit-transform: translateY(110%) !important;
   -ms-transform: translateY(110%) !important;
   -o-transform: translateY(110%) !important;
   transform: translateY(110%) !important;
+  }
 }
