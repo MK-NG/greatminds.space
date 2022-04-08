@@ -241,10 +241,13 @@ Array.from(
 				control.addEventListener('click', () => {
 					// toggle the expanded state
 					isPanelExpanded = !isPanelExpanded;
+          var windowHeight = $(window).height();
 
 					if (isPanelExpanded) {
 						panel.removeAttribute('hidden');
-
+            if(windowHeight<600){
+            window.scrollBy(0, 250);
+            }
 						panel.animate({
 							height: ['0', `${ panel.offsetHeight }px`],
 							overflow: ['hidden', 'visible']
@@ -253,6 +256,9 @@ Array.from(
 							easing: 'ease-in'
 						});
 					} else {
+            // if(windowHeight<600){
+            //   window.scrollBy(0, -250);
+            //   }
 						panel.animate({
 							height: [`${ panel.offsetHeight }px`, '0'],
 							overflow: ['hidden', 'visible']
