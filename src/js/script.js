@@ -301,8 +301,3 @@ Array.from(
 	}
 );
 
-var seeMore = document.getElementById("seeMore");
-seeMore.onclick = function() {
-  document.querySelector('.intro').scrollIntoView({ behavior: 'smooth' }); 
-  return false;
-}
