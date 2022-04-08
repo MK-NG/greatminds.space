@@ -39,7 +39,7 @@ body {
 }
 
 p {
-  line-height: 2em;
+  line-height: 1.7em;
   font-size: 1.4em;
   padding-bottom: 1em;
   @include respond(phone){
@@ -131,11 +131,9 @@ align-items: center; /* align vertical */
 .threefifth {
   box-sizing: border-box;
   width: 100%;
-  margin-bottom:10px;
   padding-left: 35px;
   @include on-breakpoint(tablet-up) {
     padding-left: 0px;
-    margin-bottom:30px;
     text-align:center;
     width: 70%;
     display: block;
