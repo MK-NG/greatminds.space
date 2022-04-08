@@ -306,10 +306,3 @@ seeMore.onclick = function() {
   document.querySelector('.intro').scrollIntoView({ behavior: 'smooth' }); 
   return false;
 }
-
-// var signUp = document.getElementById("registerInterest");
-
-//   signUp.onclick = function() {
-//     window.scroll({ top: 4000, left: 0, behavior: 'smooth' });
-//   return false;
-// }
