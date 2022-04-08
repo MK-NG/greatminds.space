@@ -245,9 +245,9 @@ Array.from(
 
 					if (isPanelExpanded) {
 						panel.removeAttribute('hidden');
-            if(windowWidth<800){
-            window.scrollBy(0, 250);
-            }
+            // if(windowWidth<800){
+            // window.scrollBy(0, 250);
+            // }
 						panel.animate({
 							height: ['0', `${ panel.offsetHeight }px`],
 							overflow: ['hidden', 'visible']
