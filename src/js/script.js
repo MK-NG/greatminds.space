@@ -1,4 +1,7 @@
+import smoothscroll from 'smoothscroll-polyfill';
 
+// kick off the polyfill!
+smoothscroll.polyfill();
 
 // 
 
@@ -245,9 +248,9 @@ Array.from(
 
 					if (isPanelExpanded) {
 						panel.removeAttribute('hidden');
-            // if(windowWidth<800){
-            // window.scrollBy(0, 250);
-            // }
+            if(windowWidth<800){
+              window.scrollBy({ top: 350, left: 0, behavior: 'smooth' });
+             }
 						panel.animate({
 							height: ['0', `${ panel.offsetHeight }px`],
 							overflow: ['hidden', 'visible']
@@ -255,10 +258,7 @@ Array.from(
 							duration: 75,
 							easing: 'ease-in'
 						});
-					} else {
-            // if(windowWidth<600){
-            //   window.scrollBy(0, -250);
-            //   }
+					} else {           
 						panel.animate({
 							height: [`${ panel.offsetHeight }px`, '0'],
 							overflow: ['hidden', 'visible']
