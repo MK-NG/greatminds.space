@@ -84,15 +84,16 @@ button {
 
 .chevron {
   position: relative;
+  top: -0.1em;
   transition-duration: 0.3s;
     transition-property: transform;
 }
 
 button[aria-expanded="true"] .chevron {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(450deg);
+  -ms-transform: rotate(450deg);
+  -o-transform: rotate(450deg);
+  transform: rotate(450deg);
 }
 
 button[aria-expanded="true"] .habit-icon {
