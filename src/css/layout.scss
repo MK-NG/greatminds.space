@@ -120,11 +120,24 @@ align-items: center; /* align vertical */
   box-sizing: border-box;
   width: 100%;
   display: inline-flex;
-  margin-bottom:10px;
   @include on-breakpoint(tablet-up) {
-    margin-bottom:30px;
     text-align:center;
     width: 20%;
+    display: block;
+    float: left;
+}
+}
+
+.threefifth {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom:10px;
+  padding-left: 35px;
+  @include on-breakpoint(tablet-up) {
+    padding-left: 0px;
+    margin-bottom:30px;
+    text-align:center;
+    width: 70%;
     display: block;
     float: left;
 }
@@ -141,10 +154,14 @@ align-items: center; /* align vertical */
 }
 
 .habit-icon {
-  padding-top: 50px;
+  padding-top: 25px;
   display:block;
-  margin:auto;
-  max-width: 100%;
+  margin-left:auto !important;
+  margin-right: auto !important;
+  max-width: 80%;
+  @include respond(phone){
+    max-height: 200px;
+  }
 }
 
 .padding-top-m {
