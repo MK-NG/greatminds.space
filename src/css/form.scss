@@ -55,7 +55,7 @@
   appearance: none;
   width: 70%;
   @include respond(phone) {
-  width: 92%;
+  width: 63vw;
   font-size: 1em;
 height: 40px;}
   margin-bottom: 10px;
@@ -81,7 +81,7 @@ height: 40px;}
   margin-top: 10px;
   width: 20%;
   @include respond(phone) {
-    width: 99%;}
+    width: 70vw;}
     border: 3px solid var(--c-black);
     color: var(--c-text);
     padding: .5em 1em;
