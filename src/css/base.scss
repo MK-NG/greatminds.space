@@ -41,7 +41,6 @@
   height: 45rem;
   // border: 3px solid var(--c-black);
   opacity: 1;
-  
   box-shadow: 0 4px 35px rgba(0,0,0,.1);
   border-radius: 40px;
   display: flex;
@@ -59,7 +58,7 @@
     @include respond(phone) {
       margin-top: 1px;
     font-size: 75px;
-      padding-top:0px;
+      padding-top:10vh;
     }
   }
 
