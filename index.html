@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title> Great Minds | An App to help you make creativity a daily habit 
+    <title> Great Minds | The app to turn creative thinking into a daily habit. 
     </title>
     <link rel="stylesheet" href="/src/css/main.scss" />
     <script defer src="src/js/script.js"></script>
@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
         <meta name="author" content="Great Minds">
         <meta name="description" content="Make creative thinking a habit.">
-        <meta property="og:title" content="Great Minds | An App to help you make creativity a daily habit">
+        <meta property="og:title" content="Great Minds | The app to turn creative thinking into a daily habit.">
         <meta property="og:description" content="A daily habit builder to give you the confidence to think creatively so that your teams have the power to effect and empower change.">
         <meta property="og:image" content="/src/img/great-minds.png">
         <meta property="og:url" content="https://www.greatminds.space">
@@ -29,15 +29,7 @@
   <body>
     <header>
       <div class="heading">
-        
-        <a class="header-link hover-switch" href="#top">
-          
-      <div class="sticker-great">GREAT</div>
-      <div class="sticker-minds">MINDS</div>
-      <!-- <img class="logo-img" src="./src/img/brain-logo.png" alt="Great minds logo">
-      <img class="logo-img" src="./src/img/brain-logo-nc.png" alt="Great minds logo"> -->
-  
-        </a>
+        &nbsp;
           
         <!-- <nav class="menu">
           <ul class="menu__list">
@@ -66,7 +58,7 @@
              </div>
            </h1>
            <p class="intro"> The app to turn creative thinking into a daily habit. </p>
-           <button onclick="location.href='#sign-up'" type="button" class="cta">Register your interest</button> 
+           <button onclick="location.href='#sign-up'" type="button" class="cta">Join our test team</button> 
            <div class="centre">
            <span class="continue"><a class="see-more" href="#intro"><svg class="see-more" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.5" y="1.5" width="46" height="46" rx="8.5" stroke="black" stroke-width="3"/>
@@ -364,18 +356,19 @@
 
     <section id="sign-up">
       <div data-aos="fade-up" data-aos-delay="50"  class="container overflow">
+        <h2>Join our test team </h2>
+        <p class="sub-text">We are currently building our app and need pioneers to help test our content. 
+        </p>
+        <p class="sub-text">
+          At the beginning of May we're launching a 4 week programme where you'll recieve a creative thinking exercise Monday to Friday for four weeks. The only price is your feedback!  </p> 
   
         <div class="Subscribe">
-          <h2>Register your interest</h2>
-          <p class="sub-text">We are currently building our app and need pioneers to join us from the beginning. 
-          </p>
-          <p class="sub-text">
-           Subscribe to receive updates and be the first to test Great Minds with your teams. </p> 
           <form action="sub" name="signup" method="POST" data-netlify="true">
-            <input type="text" name="name" placeholder="Name" required >
+           <div style="display:inline"> <input type="text" name="name" placeholder="First name" required >
+            <input type="text" name="surname" placeholder="Surname" required ></div>
             <input type="text" name="company" placeholder="Company Name (optional)">
-            <input  type="text" name="email" class="email-input" placeholder="Email Address" required /> 
-                    <button type="submit">Subscribe</button> 
+            <input  type="text" name="email" class="email-input" placeholder="Email Address" required /> <br>
+                    <button type="submit">Sign up</button> 
         </form>
           <div class="Loading">
             <div class="LoadingDot"></div>
@@ -396,8 +389,8 @@
                 </g>
               </svg>
             </div>
-            <h3>All signed up</h3>
-            <span>You will be the first to hear about our updates</span>
+            <h3 style="color: var(--c-lilac);margin-left:auto;margin-right:auto"> All signed up 🎉</h3>
+            <span class="sub-text">We'll be in touch soon!</span>
           </div>
         </div>
         <small>By signing up you agree to recieve emails and updates from us about Great Minds.</small>
@@ -411,11 +404,17 @@
   <div class="container">
     <div class="row">
         <div class="half">
-          ©2022 Great Minds <br><br>
-          Contact us: <a class="footer-link" href="mailto:hello@greatminds.space">hello@greatminds.space</a>
+          <div class="gm-brain">
+          <svg width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.0144 7.6677C25.389 3.71899 18.0451 2.66032 18.4599 5.97305C18.5459 6.65982 18.753 7.01703 19.1272 7.08777C19.8972 7.23219 20.2717 6.51013 19.9889 5.89441C18.7068 3.10339 11.4139 2.65859 12.6259 6.90443C12.9625 8.08352 14.6539 8.00341 14.3439 6.66881C13.1025 3.08832 7.2264 5.09472 8.19229 9.5937C8.41835 10.6466 8.91466 11.3919 9.5096 11.3464C10.3463 11.2823 10.7225 10.18 9.9403 9.79248C6.43232 8.05424 2.36343 12.5847 5.43532 14.6422C6.42703 15.3065 7.44941 14.0873 6.38866 13.3863C3.69385 11.6056 0.375035 19.1008 5.44504 19.267C6.47489 19.3008 7.01874 18.526 6.50386 17.8715C6.06249 17.3105 5.32967 17.3324 4.78543 18.1071C4.0383 19.1705 3.93795 19.9893 4.39062 21.0618C5.19441 22.9663 9.47698 22.9115 9.67752 21.3227C9.75616 20.9034 9.33118 20.5048 8.86919 20.4182C7.91359 20.2551 7.56016 21.4479 7.58417 22.1698C8.09402 26.2507 12.6172 25.494 13.383 23.9748C13.5717 23.5314 13.5852 22.8969 12.9805 22.7037C12.1294 22.485 11.8789 23.3739 11.7427 23.9748C11.5662 24.7536 11.6731 25.4985 12.3718 25.9487C12.6993 26.1596 13.0188 26.3625 13.392 26.4825C13.9041 26.6472 13.7447 26.5021 13.6989 26.8933C13.6158 27.604 13.858 29.1219 14.4805 29.4721C14.8376 29.673 15.329 29.8886 15.4462 29.468C15.6481 26.8879 16.4485 26.2327 18.7096 26.0023C20.8472 25.6421 21.7241 25.0016 22.1303 23.6584C22.2935 23.1229 22.2511 22.5145 22.209 21.9638C22.1781 21.5609 21.9878 21.0316 21.7238 20.7263C20.8521 19.7184 19.818 20.9685 20.8733 22.0388C23.4382 24.4752 27.173 22.5124 26.8633 20.7713C26.8432 20.5087 26.5804 19.7792 26.3 19.4241C25.3758 18.2537 24.1949 19.4504 25.0003 20.2556C28.4244 23.6792 31.7544 19.6585 30.5898 17.3678C30.5898 17.3678 30.0992 16.1598 29.2232 16.155C28.3472 16.1501 28.1202 17.9342 30.143 18.0769C35.0452 18.6223 34.878 8.52771 29.2185 10.6544C28.0866 11.0797 28.1305 12.4338 29.3776 12.358C30.2279 12.3063 30.8628 11.4765 30.8031 10.6967C30.8976 8.30598 28.1127 5.07748 24.3161 6.17804C23.6009 6.38538 23.0162 7.4561 23.5653 8.07792C23.9718 8.53833 24.8125 8.58746 25.0144 7.6677Z" stroke="white" stroke-width="1.09676" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>           
+            </div>
+            Great Minds 
+            <br>
+            <br> Contact us:  <a class="footer-link" href="mailto:hello@greatminds.space">hello@greatminds.space</a>
         </div>
         <div class="half">
-          <div class="social-media">
+          <!-- <div class="social-media">
             <a class="social-media-link" href="https://twitter.com/creategreatminds"><span style="display:none"> Go to Twitter page for Great Minds - opens in a new tab</span><svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M23.643 4.937C22.808 5.307 21.911 5.557 20.968 5.67C21.941 5.08779 22.669 4.17147 23.016 3.092C22.1019 3.63499 21.1014 4.0172 20.058 4.222C19.3564 3.47287 18.4271 2.97633 17.4143 2.80947C16.4016 2.64262 15.3621 2.81479 14.4572 3.29925C13.5524 3.78371 12.8328 4.55336 12.4102 5.4887C11.9875 6.42405 11.8855 7.47275 12.12 8.472C10.2677 8.379 8.45564 7.89755 6.80144 7.05891C5.14723 6.22026 3.68785 5.04316 2.51801 3.604C2.11801 4.294 1.88801 5.094 1.88801 5.946C1.88757 6.713 2.07644 7.46824 2.43789 8.14473C2.79934 8.82122 3.32217 9.39804 3.96001 9.824C3.22029 9.80046 2.49688 9.60058 1.85001 9.241V9.301C1.84994 10.3767 2.22204 11.4194 2.90319 12.252C3.58434 13.0846 4.53258 13.6559 5.58701 13.869C4.9008 14.0547 4.18135 14.0821 3.48301 13.949C3.78051 14.8746 4.36001 15.684 5.14038 16.2639C5.92075 16.8438 6.86293 17.1652 7.83501 17.183C6.18485 18.4784 4.1469 19.1811 2.04901 19.178C1.67739 19.1781 1.30609 19.1564 0.937012 19.113C3.06649 20.4822 5.54535 21.2088 8.07701 21.206C16.647 21.206 21.332 14.108 21.332 7.952C21.332 7.752 21.327 7.55 21.318 7.35C22.2293 6.69097 23.0159 5.8749 23.641 4.94L23.643 4.937V4.937Z" fill="white"/>
               </svg>
@@ -431,7 +430,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.838C1 2.35053 1.19365 1.88303 1.53834 1.53834C1.88303 1.19364 2.35053 0.999999 2.838 0.999999H21.16C21.4016 0.999604 21.6409 1.04686 21.8641 1.13907C22.0874 1.23127 22.2903 1.36661 22.4612 1.53733C22.6322 1.70806 22.7677 1.91082 22.8602 2.13401C22.9526 2.35719 23.0001 2.59642 23 2.838V21.16C23.0003 21.4016 22.9529 21.6409 22.8606 21.8642C22.7683 22.0875 22.6328 22.2904 22.462 22.4613C22.2912 22.6322 22.0884 22.7678 21.8651 22.8602C21.6419 22.9526 21.4026 23.0001 21.161 23H2.838C2.59655 23 2.35746 22.9524 2.1344 22.86C1.91134 22.7676 1.70867 22.6321 1.53798 22.4613C1.3673 22.2905 1.23193 22.0878 1.13962 21.8647C1.04731 21.6416 0.999869 21.4025 1 21.161V2.838ZM9.708 9.388H12.687V10.884C13.117 10.024 14.217 9.25 15.87 9.25C19.039 9.25 19.79 10.963 19.79 14.106V19.928H16.583V14.822C16.583 13.032 16.153 12.022 15.061 12.022C13.546 12.022 12.916 13.111 12.916 14.822V19.928H9.708V9.388ZM4.208 19.791H7.416V9.25H4.208V19.79V19.791ZM7.875 5.812C7.88105 6.08667 7.83217 6.35979 7.73124 6.61531C7.63031 6.87084 7.47935 7.10363 7.28723 7.30003C7.09511 7.49643 6.8657 7.65247 6.61246 7.75901C6.35921 7.86554 6.08724 7.92042 5.8125 7.92042C5.53776 7.92042 5.26579 7.86554 5.01255 7.75901C4.7593 7.65247 4.52989 7.49643 4.33777 7.30003C4.14565 7.10363 3.99469 6.87084 3.89376 6.61531C3.79283 6.35979 3.74395 6.08667 3.75 5.812C3.76187 5.27285 3.98439 4.75979 4.36989 4.38268C4.75539 4.00558 5.27322 3.79442 5.8125 3.79442C6.35178 3.79442 6.86961 4.00558 7.25512 4.38268C7.64062 4.75979 7.86313 5.27285 7.875 5.812V5.812Z" fill="white"/>
                 </svg>
                 
-            </a>
+            </a> -->
           </div>
 
         </div>
