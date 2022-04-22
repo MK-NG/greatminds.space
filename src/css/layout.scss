@@ -131,9 +131,8 @@ align-items: center; /* align vertical */
 .threefifth {
   box-sizing: border-box;
   width: 100%;
-  padding-left: 35px;
   @include on-breakpoint(tablet-up) {
-    padding-left: 0px;
+    padding-left: 35px;
     text-align:center;
     width: 70%;
     display: block;
