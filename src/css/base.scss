@@ -32,33 +32,42 @@
   
 
 .phone {
-  margin-top: 20px;
-  position: relative;
-  z-index: 2;
-  margin-left:auto;
+
+  margin-left: auto;
   margin-right: auto;
-  width: 21rem;
-  height: 45rem;
-  // border: 3px solid var(--c-black);
+  width: 16rem;
+  height: 35rem;
   opacity: 1;
-  box-shadow: 0 4px 35px rgba(0,0,0,.1);
+  box-shadow: rgba(123, 24, 75, 0.25) 0px 50px 100px -20px, rgba(202, 63, 174, 0.57) 0px 30px 60px -30px;
   border-radius: 40px;
+  border: 5px solid white;
   display: flex;
   flex-direction: column;
+  //  background-image: url("/src/img/gmbg-image.png");
+  // background-repeat:round;
+  //    background-position:center;
+  // background: rgba(111, 155, 191, 0.1);
+  background-image: linear-gradient(180deg, rgba(5, 142, 253, 0.3), rgba(255, 153, 244, 0.8));
+  @include respond(phone) {
+  display: none}
+}
+
+.gm-header-brain {
+  margin: auto;
+  width: 150px;
+  padding-left: 10px;
 }
 
   h1 {
     font-size: 110px;
     font-family: "Work Sans", sans-serif;
-    line-height: 1.06;
+    line-height: 0.8;
     letter-spacing: -0.02em;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     color: var(--c-text);
-    padding-top: 17vh;
     @include respond(phone) {
       margin-top: 1px;
     font-size: 75px;
-      padding-top:10vh;
     }
   }
 

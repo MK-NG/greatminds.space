@@ -19,12 +19,13 @@
 
 
   .mask {
-    height: 125px;
+    height: 110px;
+    line-height: 1.08;
     position: relative;
     overflow: hidden;
     margin-top: var(--offset);
     @include respond(phone) {
-      height: 90px;
+      height: 80px;
     }
   }
   
@@ -32,9 +33,9 @@
     display: block;
     box-sizing: border-box;
     position: absolute;
-    top: 115px;
+    top: 114px;
     @include respond(phone) {
-      top: 88px;
+      top: 80px;
     }
     padding-bottom: var(--offset);
     white-space: nowrap;   
@@ -97,31 +98,30 @@
   }
   
   .mask span:nth-child(3) {
-    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal) );
-    -webkit-text-fill-color: var(--c-teal);
+    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white) );
+    -webkit-text-fill-color: var(--c-pink);
   }
   
   .mask span:nth-child(4) {
-    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal));
+    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white));
     -webkit-text-fill-color: var(--c-teal);
 
   }
   
   .mask span:nth-child(5) {
-    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal));
-    -webkit-text-fill-color: var(--c-teal);
+    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white));
+    -webkit-text-fill-color: var(--c-orange);
 
   }
   
   .mask span:nth-child(6) {
-    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal));
-    -webkit-text-fill-color: var(--c-teal);
-
+    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white));
+    -webkit-text-fill-color: var(--c-lilac);
   }
   
   .mask span:nth-child(7) {
-    background-image: linear-gradient(45deg, var(--c-teal) 50%, var(--c-teal));
+    background-image: linear-gradient(45deg, var(--c-white) 50%, var(--c-white));
     -webkit-text-fill-color: var(--c-teal);
-
   }
+
 

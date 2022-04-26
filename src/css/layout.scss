@@ -62,9 +62,11 @@ align-items: center; /* align vertical */
 
 .intro {
   padding-left: 8px;
-  line-height: 2em; 
+  line-height: 2em;
   font-family: var(--font-family-tertiary);
-  font-size: 2em;
+  font-size: 1.6em;
+  max-width: 420px;
+  padding-top: 20px;
   @include respond(phone){
   font-size: 1.4em;
 }
@@ -116,6 +118,25 @@ align-items: center; /* align vertical */
 }
 }
 
+.onethird {
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    width: 30%;
+    float: left;
+    margin-right: 35px;
+}
+}
+.twothird {
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    width: 60%;
+    float: left;
+    margin-right: 35px;
+}
+}
+
 .onefifth {
   box-sizing: border-box;
   width: 100%;
@@ -125,6 +146,13 @@ align-items: center; /* align vertical */
     width: 20%;
     display: block;
     float: left;
+}
+}
+
+.row-heading {
+  padding-top: 17vh;
+  @include respond(phone) {
+    padding-top:10vh;
 }
 }
 

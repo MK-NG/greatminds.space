@@ -32,10 +32,10 @@ setInterval(function () {
   let overlayBackground = window.getComputedStyle(next).getPropertyValue('background-image');
   let overlayTwoBackground = window.getComputedStyle(show).getPropertyValue('background-image');
   
-  overlay.style.width = overlayWidth + 'px';
+  overlay.style.width = overlayWidth + 5 + 'px';
   overlay.style.backgroundImage = overlayBackground;
   
-  overlayTwo.style.width = overlayWidth + 'px';
+  overlayTwo.style.width = overlayWidth + 5 + 'px';
   overlayTwo.style.backgroundImage = overlayTwoBackground;
   
   overlay.classList.add('visible');
