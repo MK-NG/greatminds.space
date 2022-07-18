@@ -2,11 +2,13 @@
 
 @font-face {
   font-family: "Kollekif";
-  src: url("../fonts/Kollektif-Bold.ttf") format("ttf"),
-       url("../fonts/Kollektif.ttf") format("ttf"),
+  src: url("../fonts/Kollektif-Bold.ttf") format("truetype"),
+       url("../fonts/Kollektif.ttf") format("truetype"),
        url("../fonts/Kollektif-Bold.woff") format("woff"),
-       url("../fonts/Kollektif.woff") format("woff");
+       url("../fonts/Kollektif.woff") format("woff"),
+       url("../fonts/Kollektif.woff2") format("woff2"),
 }
+
 
 :root {
     --offset: 6px;
