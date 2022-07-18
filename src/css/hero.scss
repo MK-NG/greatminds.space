@@ -6,10 +6,9 @@
   left: -70px;
   @include respond(phone) {
     left:0px;
-    zoom: 0.8;
-    -moz-transform: scale(0.8);
-    -moz-transform: scale(0.3)translate(-75%, -50%);
-    transform: scale(0.3)translate(-75%, -50%)
+    zoom: 0.9;
+    -moz-transform: scale(0.9)translate(-75%, -50%);
+    transform: scale(0.9)translate(-75%, -50%)
   }
 }
 
@@ -130,8 +129,8 @@
     left: 20px;
     @include respond(phone) { 
     font-size: 1em;
-      top: -200px;
-      left: 35px;
+      top: -170px;
+      left: 30px;
       width: 345px;
      }
     }    
@@ -145,7 +144,6 @@
   
   h2 > .magic > .magic-star {
     --size: clamp(20px, 1.5vw, 30px);
-    
     animation: scale 700ms ease forwards;
     display: block;
     height: var(--size);
