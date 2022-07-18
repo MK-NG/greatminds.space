@@ -3,7 +3,7 @@
   zoom: 0.5;
   -moz-transform: scale(0.5);
   @include respond(phone) {
-    // left:100px;
+    left:100px;
     zoom: 0.3;
     -moz-transform: scale(0.3);
   }
@@ -130,11 +130,10 @@
     position: relative;
     margin-left: -60px;
     top: 155px;
-      @include respond(phone) { 
-      
+      @include respond(phone) {   
       font-size: 1em;
-      top: -15px;
-      // left: 10px;
+      top: 50px;
+      left: 10px;
       // width: 345px;
      }
     }    
