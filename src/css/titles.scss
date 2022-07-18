@@ -1,0 +1,19 @@
+h1 {
+  letter-spacing: -0.04em;
+  color: var(--c-white);
+  -webkit-text-fill-color: var(--c-white);
+  -webkit-text-stroke-color: var(--c-white);
+  -webkit-text-stroke-width: 4px;
+  font-family: Work Sans;
+  font-size: 250px;
+  font-weight: 900;
+  line-height: 80%;
+  position: absolute; 
+  margin-top: 175px;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 410;
+  color: var(--c-white);
+}

@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title> Great Minds | The app to turn creative thinking into a daily habit. 
+    <title> Great Minds | Your app to turn creative thinking into a daily habit. 
     </title>
     <link rel="stylesheet" href="/src/css/main.scss" />
-    <script defer src="src/js/script.js"></script>
+    <script defer src="src/js/script.js" type="module"></script>
        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js" type="module"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="module"></script>
       <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
         <meta name="author" content="Great Minds">
@@ -28,489 +28,51 @@
  
   <body>
     <header>
-      <div class="heading">
-        &nbsp;
-          
-        <!-- <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#how-we-can-help" class="menu__link">What we do</a></li>
-            <li class="menu__item"><a href="#sign-up" class="menu__link">Register your interest</a></li>
-           <input class="container_toggle" type="checkbox" id="switch" name="mode">
-          <label for="switch">Toggle</label> 
-          </ul>
-        </nav> -->
-          
-        </div>
       <div id="top" class="container">
-        <div class="row row-heading">
-          <div class="twothird">
-            <h1 >
-              Great minds
-               <div class="mask">
-                 <div class="overlay"></div>
-                 <div class="overlay--two"></div>
-                 
-                 <span data-show>think</span>
-                 <span>play</span>
-                 <span>grow</span>
-                 <span>inspire</span>
-                 <span>connect</span>
-                 
-               </div>
-             </h1>
-          
-        <p class="intro"> The app to turn creative thinking into a daily habit. </p>
-        <button onclick="location.href='#sign-up'" type="button" class="cta">Join our test team</button> 
+        <div id="animation">
+       <span class="brain-1"></span>
+       <span class="brain-2"></span>
+       <span class="brain-3"></span>
+       <span class="brain-4"></span>
+       <span class="brain-5"></span>
+       <span class="brain-6"></span>
+       <span class="head-1"><svg width="410" height="500" viewBox="0 0 335 366" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M273.222 258.252H252.984V278.491V303.069C252.984 318.319 252.941 327.721 252.024 334.537C251.216 340.549 250.052 341.663 249.814 341.89C249.806 341.898 249.798 341.905 249.792 341.911C249.786 341.918 249.778 341.925 249.77 341.934C249.543 342.171 248.429 343.336 242.418 344.144C235.601 345.06 226.2 345.103 210.95 345.103H181.37C96.1983 345.103 58.0526 315.07 39.7944 286.095C20.4623 255.415 20.2392 221.168 20.2392 207.431V149.312C20.2392 104.69 38.316 72.83 64.8506 51.8546C91.9259 30.4519 128.957 19.5708 166.986 20.2703C205 20.9695 242.218 33.2133 269.534 55.7591C296.382 77.9187 314.478 110.606 314.478 154.989V216.997C314.478 231.853 314.437 241.01 313.564 247.667C312.79 253.56 311.669 254.676 311.455 254.888C311.448 254.896 311.442 254.902 311.437 254.907L273.222 258.252ZM273.222 258.252C288.079 258.252 297.236 258.211 303.893 257.338M273.222 258.252L303.893 257.338M303.893 257.338C309.786 256.565 310.902 255.443 311.114 255.23M303.893 257.338L311.114 255.23M311.114 255.23C311.121 255.222 311.128 255.216 311.133 255.21L311.114 255.23ZM311.133 255.21C311.236 255.112 311.337 255.011 311.436 254.908L311.133 255.21Z" stroke="#F6F6F6" stroke-width="40.4773"/>
+        </svg>
+        </span>
+        <span class="title"><h1>Great Minds </h1> </span>
+    </div>
+    <div class="tagline" data-aos="zoom-out-up" data-aos-delay="1600" data-aos-duration="1000">
+      <h2> Your app to turn  <span class="magic">
+          <span class="magic-star">
+            <svg viewBox="0 0 512 512">
+            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+            </svg>
+          </span>
+          <span class="magic-star">
+            <svg viewBox="0 0 512 512">
+            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+            </svg>
+          </span>
+          <span class="magic-star">
+            <svg viewBox="0 0 512 512">
+            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+            </svg>
+          </span>
+          <span class="magic-text">creative thinking</span>
+        </span> into a daily habit. </h2>
+      </div>
+      <div class="centre">
 
-          </div>
-          <div class="onethird">
-           <div data-aos="zoom-in" class="phone">
-            <div class="gm-header-brain"  data-aos="fade-up" data-aos-delay="500"  data-aos-anchor-placement="top-bottom">
-           
-            <svg viewBox="0 0 520 407" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M325.272 94.6094C329.962 46.042 239.642 32.8679 244.677 73.6279C245.721 82.078 248.261 86.4765 252.863 87.3544C262.332 89.1468 266.954 80.272 263.488 72.692C247.773 38.3319 158.069 32.7103 172.891 84.9654C177.007 99.4769 197.816 98.5261 194.03 82.1022C178.833 38.0313 106.506 62.5922 118.296 117.956C121.055 130.913 127.145 140.092 134.465 139.544C144.758 138.773 149.409 125.221 139.795 120.437C96.6773 98.9824 46.5307 154.63 84.2773 180.004C96.4631 188.196 109.065 173.219 96.0305 164.574C62.917 142.613 21.9365 234.747 84.3018 236.896C96.9697 237.332 103.676 227.812 97.3555 219.751C91.9376 212.84 82.9224 213.095 76.2114 222.613C66.9987 235.68 65.7474 245.75 71.2939 258.953C81.1426 282.398 133.826 281.811 136.325 262.271C137.301 257.114 132.082 252.203 126.4 251.127C114.648 249.102 110.276 263.768 110.557 272.649C116.745 322.861 172.402 313.645 181.853 294.972C184.184 289.521 184.363 281.716 176.928 279.328C166.463 276.619 163.364 287.549 161.676 294.938C159.489 304.515 160.788 313.681 169.374 319.233C173.398 321.835 177.324 324.337 181.912 325.821C188.209 327.857 186.251 326.069 185.68 330.88C184.643 339.621 187.592 358.298 195.242 362.619C199.63 365.098 205.67 367.76 207.121 362.589C209.658 330.855 219.517 322.811 247.338 320.023C273.641 315.636 284.44 307.775 289.465 291.26C291.484 284.676 290.975 277.19 290.468 270.416C290.097 265.458 287.767 258.943 284.524 255.182C273.823 242.766 261.076 258.122 274.035 271.311C305.537 301.334 351.521 277.265 347.747 255.842C347.505 252.611 344.288 243.632 340.845 239.257C329.5 224.841 314.949 239.537 324.84 249.459C366.892 291.645 407.938 242.253 393.659 214.05C393.659 214.05 387.648 199.18 376.872 199.102C366.097 199.025 363.268 220.967 388.148 222.764C448.442 229.574 446.591 105.391 376.928 131.436C362.995 136.645 363.507 153.304 378.85 152.397C389.311 151.778 397.138 141.584 396.42 131.989C397.632 102.582 363.44 62.8095 316.713 76.27C307.911 78.8058 300.696 91.9653 307.438 99.6259C312.429 105.298 322.77 105.92 325.272 94.6094Z" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-             </svg>
-           <div data-aos="fade-up"  data-aos-delay="1000"  style="font-size: 20px; font-weight: 600; padding-left: 10px; color: white" >Great Minds</div>  
-            </div>       
-          </div>      
-          </div>
-        </div>
-       
-           <div class="centre">
-           <span class="continue"><a class="see-more" href="#intro"><svg class="see-more" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1.5" y="1.5" width="46" height="46" rx="8.5" stroke="black" stroke-width="3"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5011 13.6875C24.7248 13.6875 24.9395 13.7764 25.0977 13.9346C25.2559 14.0929 25.3448 14.3075 25.3448 14.5312V34.4319L30.6537 29.1214C30.8121 28.9629 31.027 28.8739 31.2511 28.8739C31.4751 28.8739 31.69 28.9629 31.8484 29.1214C32.0069 29.2798 32.0959 29.4947 32.0959 29.7188C32.0959 29.9428 32.0069 30.1577 31.8484 30.3161L25.0984 37.0661C25.0201 37.1447 24.927 37.207 24.8244 37.2496C24.7219 37.2921 24.612 37.314 24.5011 37.314C24.3901 37.314 24.2802 37.2921 24.1777 37.2496C24.0752 37.207 23.9821 37.1447 23.9037 37.0661L17.1537 30.3161C16.9953 30.1577 16.9062 29.9428 16.9062 29.7188C16.9063 29.4947 16.9953 29.2798 17.1537 29.1214C17.3121 28.9629 17.527 28.8739 17.7511 28.8739C17.9751 28.8739 18.19 28.9629 18.3484 29.1214L23.6573 34.4319V14.5312C23.6573 14.3075 23.7462 14.0929 23.9044 13.9346C24.0627 13.7764 24.2773 13.6875 24.5011 13.6875V13.6875Z" fill="black"/>
-            </svg>  <br><span class="more-link">More about us</span>
-            </a></span>
-            </div>
+    </div>
+     
       </header>
-      <section id="intro">
-      <div data-aos="fade-up" data-aos-delay="50" class="container overflow">
-        <p>
-         Great Minds gives you and your team the confidence to think creatively so you can: 
-        </p>
-        
-          <div class="reasons">
-          <div class="row">
-            <div class="onefifth">
-              <svg class="icon-image" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32.86 8.7675C32.51 7.735 31.53 7 30.375 7H11.125C9.97 7 9.0075 7.735 8.64 8.7675L5 19.25V33.25C5 34.2125 5.7875 35 6.75 35H8.5C9.4625 35 10.25 34.2125 10.25 33.25V31.5H31.25V33.25C31.25 34.2125 32.0375 35 33 35H34.75C35.7125 35 36.5 34.2125 36.5 33.25V19.25L32.86 8.7675ZM11.7375 10.5H29.745L31.565 15.75H9.9175L11.7375 10.5ZM33 28H8.5V19.845L8.71 19.25H32.8075L33 19.845V28Z" fill="#21C4D1"/>
-                <path d="M13.625 26.25C15.0747 26.25 16.25 25.0747 16.25 23.625C16.25 22.1753 15.0747 21 13.625 21C12.1753 21 11 22.1753 11 23.625C11 25.0747 12.1753 26.25 13.625 26.25Z" fill="#21C4D1"/>
-                <path d="M27.625 26.25C29.0747 26.25 30.25 25.0747 30.25 23.625C30.25 22.1753 29.0747 21 27.625 21C26.1753 21 25 22.1753 25 23.625C25 25.0747 26.1753 26.25 27.625 26.25Z" fill="#21C4D1"/>
-                </svg>
-                
-                
-                
-                
-                
-                
-            <div class="expl">Drive change </div>            
-            </div>
-            <div class="onefifth">
-              <svg class="icon-image" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.1345 11.9779C20.5196 11.3124 21.4803 11.3124 21.8655 11.9778L33.3088 31.7491C33.6946 32.4157 33.2136 33.25 32.4433 33.25H9.55671C8.78643 33.25 8.30536 32.4157 8.69122 31.7491L20.1345 11.9779ZM21.8654 4.99483C21.4803 4.32954 20.5197 4.32954 20.1346 4.99483L2.61902 35.249C2.23306 35.9156 2.71411 36.75 3.48445 36.75H38.5156C39.2859 36.75 39.7669 35.9156 39.381 35.249L21.8654 4.99483ZM22.75 29C22.75 28.4477 22.3023 28 21.75 28H20.25C19.6977 28 19.25 28.4477 19.25 29V30.5C19.25 31.0523 19.6977 31.5 20.25 31.5H21.75C22.3023 31.5 22.75 31.0523 22.75 30.5V29ZM22.75 18.5C22.75 17.9477 22.3023 17.5 21.75 17.5H20.25C19.6977 17.5 19.25 17.9477 19.25 18.5V23.5C19.25 24.0523 19.6977 24.5 20.25 24.5H21.75C22.3023 24.5 22.75 24.0523 22.75 23.5V18.5Z" fill="#F47EAB"/>
-                </svg>
-                
-                
-            <div class="expl">Solve problems </div>            
-            </div>
-            <div class="onefifth">
-              <svg  class="icon-image" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.80913 19.4547C7.154 19.8712 5.70791 20.8778 4.74257 22.2853C3.77723 23.6928 3.35907 25.4043 3.56666 27.0984C3.77426 28.7924 4.59331 30.3524 5.86994 31.4851C7.14657 32.6179 8.79291 33.2455 10.4996 33.25H29.7496C30.9852 33.2492 32.2066 32.9867 33.3334 32.4798C34.4602 31.9729 35.4669 31.2331 36.2871 30.3091C37.1074 29.3851 37.7227 28.2979 38.0925 27.1189C38.4624 25.94 38.5783 24.6961 38.4327 23.4692C38.2872 22.2422 37.8834 21.06 37.248 20.0003C36.6126 18.9406 35.76 18.0275 34.7463 17.3211C33.7326 16.6147 32.5807 16.131 31.3666 15.9018C30.1525 15.6727 28.9036 15.7032 27.7021 15.9915L25.3746 16.625" stroke="#A993DD" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M27.7022 15.9915C27.104 13.623 25.6277 11.5705 23.5724 10.2502C21.5171 8.92985 19.0366 8.4404 16.6339 8.88108C14.2311 9.32175 12.0858 10.6596 10.6328 12.6233C9.17979 14.5871 8.52787 17.0299 8.80917 19.4565C8.80917 19.4565 9.07692 21 9.62467 21.875" stroke="#A993DD" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-                
-                
-                
-            <div class="expl">Imagine new possibilities  </div>            
-            </div>
-            <div class="onefifth">
-              <svg class="icon-image" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_421_2717)">
-                <path d="M16.3003 1.91988C16.3765 1.65424 16.5346 1.42104 16.7509 1.25521C16.9672 1.08938 17.2301 0.999838 17.5003 1H27.4996C27.6976 1.00015 27.8926 1.04849 28.0688 1.14104C28.2449 1.23359 28.3971 1.3677 28.5128 1.53233C28.6285 1.69696 28.7044 1.8874 28.7343 2.08797C28.7641 2.28855 28.7471 2.49353 28.6845 2.68602L24.2348 16.3741H33.7492C33.9833 16.3739 34.2127 16.4411 34.4113 16.5681C34.61 16.695 34.7698 16.8765 34.8727 17.092C34.9756 17.3075 35.0174 17.5483 34.9934 17.7869C34.9693 18.0256 34.8804 18.2525 34.7367 18.4419L17.2378 41.503C17.0585 41.7404 16.8036 41.9057 16.5176 41.9702C16.2315 42.0346 15.9325 41.994 15.6727 41.8555C15.4128 41.717 15.2087 41.4894 15.0959 41.2123C14.9831 40.9353 14.9687 40.6265 15.0554 40.3397L19.5576 25.3423H11.2507C11.0563 25.3424 10.8647 25.2961 10.6908 25.207C10.517 25.1179 10.3659 24.9885 10.2494 24.8291C10.1329 24.6696 10.0543 24.4845 10.0198 24.2885C9.98535 24.0925 9.99593 23.8909 10.0507 23.6998L16.3003 1.91988ZM18.4352 3.56235L12.9205 22.78H21.25C21.4456 22.7799 21.6385 22.8269 21.8132 22.9172C21.9878 23.0075 22.1393 23.1386 22.2556 23.2998C22.3718 23.4611 22.4495 23.6481 22.4824 23.8457C22.5153 24.0434 22.5024 24.2462 22.4449 24.4378L19.4501 34.413L31.1944 18.9364H22.4999C22.302 18.9363 22.1069 18.8879 21.9307 18.7954C21.7546 18.7028 21.6024 18.5687 21.4867 18.4041C21.371 18.2395 21.2951 18.049 21.2653 17.8485C21.2354 17.6479 21.2525 17.4429 21.315 17.2504L25.7647 3.56235H18.4352Z" fill="#F4E461" stroke="#F4E461"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_421_2717">
-                <rect width="42" height="42" fill="white"/>
-                </clipPath>
-                </defs>
-                </svg>
-                
-                
-                
-                
-            <div class="expl">Inspire and empower others </div>            
-            </div>
-            <div class="onefifth">
-              <svg class="icon-image" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M38.5 5.25H3.5V31.5H21.875L30.625 35.875V31.5H38.5V5.25Z" stroke="#ED8D07" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.375 20.125C11.375 20.125 14.875 23.625 21 23.625C27.125 23.625 30.625 20.125 30.625 20.125" stroke="#ED8D07" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-                
-            <div class="expl">Feel fulfilled </div>       
-          </div>     
-            </div>
-          </div>
-
-      </div>
-      </section>
-    <section id="about">
-      <div data-aos="fade-up" data-aos-delay="50"  class="container overflow">
-        <h2 style="margin-bottom:75px"> <span class="underline">You are creative </span> </h2>
-       <div style="padding: 2em" class="row">
-         <div class="onefifth">
-           <img class="svg-icon" src="/src/img/globe.png">
-          <!-- <svg class="svg-icon" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="52" cy="52" r="50" stroke="#21C4D1" stroke-width="4"/>
-            <path d="M36 5C36 5 44.2928 25.999 55.5 33.5C66.0088 40.5336 80.2133 30.3301 87 41C93.8656 51.7938 74.0585 66.4253 80 73C85.9415 79.5747 85.6615 83.6387 84 91M2.5 46.5C2.5 46.5 23.6679 30.9776 32 38.5C39.5366 45.3041 28.7079 54.8949 32 64.5C35.5102 74.7412 46.9119 75.4879 49.5 86C50.9471 91.8776 49.5 101.5 49.5 101.5" stroke="#21C4D1" stroke-width="4"/>
-            </svg>
-             -->
-           </div>
-           <div class="threefifth">
-             <p class="card-text">The world is changing faster than ever before. Businesses need to empower all employees to build their creative thinking skills. </p>
-           </div>
-       </div>
-
-       <div style="padding: 2em" class="row">
-        <div class="onefifth">
-          <!-- <svg class="svg-icon"  width="60" height="94" viewBox="0 0 60 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="2" y="9" width="42" height="83" rx="3" stroke="#ED8D07" stroke-width="4"/>
-            <mask id="path-2-inside-1_0_1" fill="white">
-            <rect x="27" width="33" height="20" rx="2"/>
-            </mask>
-            <rect x="27" width="33" height="20" rx="2" fill="#F6F7FC" stroke="#ED8D07" stroke-width="8" mask="url(#path-2-inside-1_0_1)"/>
-            <path d="M2 26.7934L28.8478 2V18.1157H58L40.5 52H2V26.7934Z" fill="#F6F7FC"/>
-            <path d="M2 52L28.8478 18.1157M2 52H40.5L58 18.1157H28.8478M2 52V26.7934L28.8478 2V18.1157" stroke="#ED8D07" stroke-width="4" stroke-linejoin="round"/>
-            </svg>
-             -->
-          <img class="svg-icon" src="/src/img/switch.png">
-            
-          </div>
-          <div class="threefifth">
-            <p class="card-text">Most existing solutions take creative thinking as a switch that can go on or off. Yet, very few of us are able to become creative after a workshop or a short course.  </p>
-          </div>
-      </div>
-
-      <div style="padding: 2em" class="row">
-        <div class="onefifth">
-          <img class="svg-icon" src="/src/img/practice.png">
-           
-          </div>
-          <div class="threefifth">
-            <p class="card-text">Creative thinking requires practice. The more you practice, the more you believe you can be creative. Belief is important because as Henry Ford said, “whether you think you can or you think you can’t - you’re right.” </p>
-          </div>
-      </div>
-
-      <div style="padding: 2em" class="row">
-        <div class="onefifth">
-          <img class="svg-icon" src="/src/img/GM-s.png">
-
-          <!-- <svg class="svg-icon" width="118" height="105" viewBox="0 0 118 105" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M78.4223 13.7929C77.0709 -1.04488 49.2247 0.132192 53.0502 12.0752C53.8432 14.5512 54.8551 15.7266 56.2857 15.7286C59.2284 15.7286 60.1112 12.8034 58.6406 10.7261C51.9745 1.30974 24.7416 4.71784 32.1565 19.5538C34.2157 23.6738 40.4048 22.2068 38.336 17.4942C31.2736 5.135 10.9688 16.6116 17.6503 32.5526C19.214 36.2833 21.5625 38.6912 23.7274 38.1111C26.772 37.2953 27.3975 32.9652 24.2415 32.076C10.0866 28.0878 -1.79814 47.6314 10.9679 53.1005C15.0892 54.8661 18.0194 49.657 13.6178 47.8037C2.43565 43.0954 -4.62677 73.0654 14.2063 70.168C18.0318 69.5795 19.5032 66.3424 17.149 64.2827C15.1311 62.5171 12.4407 63.1056 10.9679 66.3424C8.94593 70.7858 9.14245 73.8783 11.5564 77.5246C15.8428 83.9992 31.6157 80.831 31.2558 74.8264C31.2558 73.224 29.4108 72.0469 27.6452 72.0469C24.0043 72.1066 23.5255 76.7552 24.114 79.4036C28.8223 94.117 44.9974 88.191 46.7726 82.052C47.1623 80.2841 46.7726 77.9323 44.4064 77.638C41.1128 77.4198 40.8037 80.875 40.717 83.1877C40.6047 86.1852 41.5152 88.8614 44.4064 90.0394C45.7616 90.5915 47.0816 91.1193 48.5424 91.3039C50.547 91.5573 49.8582 91.132 49.9601 92.6079C50.1452 95.2893 52.0908 100.725 54.6315 101.587C56.0888 102.082 58.0522 102.537 58.1939 100.904C57.1527 91.2384 59.6537 88.2651 67.8422 85.8488C75.4846 83.0387 78.2783 80.0668 78.8478 74.8264C79.0798 72.7364 78.5019 70.5194 77.965 68.5157C77.5721 67.0494 76.5029 65.2271 75.3166 64.2827C71.4007 61.1655 68.4485 66.4966 73.0855 69.7176C84.242 76.9362 96.6715 67.1033 94.3224 60.89C94.0664 59.9345 92.5911 57.4232 91.3098 56.3062C87.0873 52.6253 83.556 57.8609 87.0873 60.2762C102.1 70.5446 111.609 53.3946 105.724 45.7438C105.724 45.7438 103.076 41.6239 99.8382 42.2126C96.6008 42.8014 96.9984 49.5452 104.565 48.6712C123.041 47.2901 115.433 10.1375 96.0119 21.908C92.1276 24.2622 93.2272 29.2311 97.7788 28.0876C100.882 27.3078 102.652 23.8047 101.891 20.9669C100.585 12.0753 88.0674 2.08443 74.8129 8.77669C72.3159 10.0374 70.8988 14.3953 73.3564 16.3109C75.176 17.7291 78.3141 17.3283 78.4223 13.7929Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                                  -->
-          </div>
-          <div class="threefifth">
-            <p class="card-text">That's where we come in.  Great Minds gives you the chance to explore and play with creative thinking so you ‘think you can’. Then, we help embed those behaviours into your daily life. By the time you next need to solve a problem, you’ll be so used to creative thinking that you won’t even realise you’re doing it.    </p>
-          </div>
-      </div>
-                
-       
-    </section>
-    
-
-    <section id="how-we-can-help">
-      <div data-aos="fade-up" data-aos-delay="50" class="container overflow">
-       
-        <h2> <span class="underline-2">How do we build habits?</span></h2>     
-<!-- ACCORDION -->
-        <dl role="presentation" c-accordion>
-<!--  STACK YOUR HABITS -->
-          <dt class="acc-box" role="heading"> <div class="row">
-            <div class="onefifth">
-              <img data-aos="fade-right" class="habit-icon" src="/src/img/stack-single.png" alt="illustration of stacking rocks representing stack your habits">
-
-            </div>
-            <div class="threefifth"><h3 class="tit"> Stack your habits </h3>
-              <p class="card-text"> We build your new habit by pairing it with something you already do and then nudge you to practice at a time that’s convenient and repeatable. 
-              </p>
-              <p class="card-text accord-link">
-                <svg class="chevron" width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.8081 1.05886L10.8079 1.05864C10.5848 0.835789 10.2823 0.710617 9.96698 0.710617C9.65163 0.710617 9.34917 0.835789 9.12604 1.05864L9.47937 1.4124L9.1256 1.05908C8.90276 1.2822 8.77758 1.58466 8.77758 1.90001C8.77758 2.21536 8.90276 2.51782 9.1256 2.74094L9.12582 2.74116L12.8847 6.50001L9.13123 10.2535C9.0177 10.361 8.92647 10.49 8.86278 10.6329C8.79774 10.7789 8.76277 10.9364 8.75995 11.0962C8.75713 11.256 8.78652 11.4147 8.84637 11.5629C8.90623 11.7111 8.99531 11.8457 9.10831 11.9587C9.22131 12.0717 9.35591 12.1608 9.50409 12.2206C9.65226 12.2805 9.81098 12.3099 9.97076 12.307C10.1305 12.3042 10.2881 12.2692 10.4341 12.2042C10.577 12.1405 10.7059 12.0493 10.8135 11.9358L15.4081 7.34116L15.4084 7.34094C15.6312 7.11782 15.7564 6.81536 15.7564 6.50001C15.7564 6.18466 15.6312 5.8822 15.4084 5.65908L15.4081 5.65886L10.8081 1.05886Z" fill="#21C4D1" stroke="#21C4D1"/>
-                  </svg>                  
-                    Why it works
-              </p>
-            </div>
-          </div></dt>
-          <dd class="more-info">
-            <div class="row">
-              <div class="onefifth">
-                &nbsp;
-                </div>
-                <div class="threefifth">
-                  <p style="padding-top: 15px" class="desc">Your brain builds a network of ‘neurons’ to support things you do regularly i.e. your habits. You have habits you do every day without even thinking about it - for example, brushing your teeth.  </p>
-                  <p class="desc">You can take advantage of these existing habits, (and their neuron networks) to build new ones.
-                  </p>
-                  <p class="desc"> <a class="link" target="_blank" href="https://jamesclear.com/habit-stacking">Read more about habit stacking</a>.</p>      
-             </div>
-          </dd>
-<!-- END STACK YOUR HABITS -->
-<!-- MAKE IT EASY -->          
-          <dt  class="acc-box" role="heading">
-            <div class="row">
-            <div class="onefifth">
-              <img class="habit-icon" data-aos="fade-right" src="/src/img/easy-single.png" alt="illustration of a brain representing make it easy">
-
-            </div>
-            <div class="threefifth"><h3 class="tit">  Make it easy  </h3>
-              <p class="card-text"> We give you time based exercises so that they fit into your day and you can build your new habit no matter how motivated you feel. </p>
-              <p class="card-text accord-link">
-                <svg class="chevron" width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.8081 1.05886L10.8079 1.05864C10.5848 0.835789 10.2823 0.710617 9.96698 0.710617C9.65163 0.710617 9.34917 0.835789 9.12604 1.05864L9.47937 1.4124L9.1256 1.05908C8.90276 1.2822 8.77758 1.58466 8.77758 1.90001C8.77758 2.21536 8.90276 2.51782 9.1256 2.74094L9.12582 2.74116L12.8847 6.50001L9.13123 10.2535C9.0177 10.361 8.92647 10.49 8.86278 10.6329C8.79774 10.7789 8.76277 10.9364 8.75995 11.0962C8.75713 11.256 8.78652 11.4147 8.84637 11.5629C8.90623 11.7111 8.99531 11.8457 9.10831 11.9587C9.22131 12.0717 9.35591 12.1608 9.50409 12.2206C9.65226 12.2805 9.81098 12.3099 9.97076 12.307C10.1305 12.3042 10.2881 12.2692 10.4341 12.2042C10.577 12.1405 10.7059 12.0493 10.8135 11.9358L15.4081 7.34116L15.4084 7.34094C15.6312 7.11782 15.7564 6.81536 15.7564 6.50001C15.7564 6.18466 15.6312 5.8822 15.4084 5.65908L15.4081 5.65886L10.8081 1.05886Z" fill="#21C4D1" stroke="#21C4D1"/>
-                  </svg>                  
-                    Why it works
-              </p>
-            </div>
-          </div></dt>
-          <dd class="more-info">
-            <div class="row">
-              <div class="onefifth">
-                &nbsp;
-                </div>
-                <div class="threefifth">
-            <p style="margin-top: 15px" class="desc">Actions are easier to do and maintain when they are as frictionless as possible. Human beings are naturally lazy, so the easier something is the more likely we are to do it. </p>
-             <p class="desc">Ease can come in a number of ways; time, money, physical effort, mental effort and routine. We aim to reduce all of these factors, so you’re more likely to take these actions.</p>
-             <p class="desc"> <a  class="link" target="_blank" href="https://behaviormodel.org/ability/">Read more about ability</a>.</p>      
-             </div>
-          </dd>
-<!-- END MAKE IT EASY --> 
-<!-- REMIND YOURSELF WHY -->    
-          <dt  class="acc-box" role="heading">
-            <div class="row">
-              <div class="onefifth">
-                <img data-aos="fade-right" class="habit-icon" src="/src/img/why-single.png" alt="illustration of a question mark representing remind yourself why">
-            
-              </div>
-              <div class="threefifth"><h3 class="tit">  Remind yourself why </h3>
-                <p class="card-text">We resurface your personal reasons for improving your creativity so you are motivated to continue. </p>
-                <p class="card-text accord-link">
-                  <svg class="chevron" width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.8081 1.05886L10.8079 1.05864C10.5848 0.835789 10.2823 0.710617 9.96698 0.710617C9.65163 0.710617 9.34917 0.835789 9.12604 1.05864L9.47937 1.4124L9.1256 1.05908C8.90276 1.2822 8.77758 1.58466 8.77758 1.90001C8.77758 2.21536 8.90276 2.51782 9.1256 2.74094L9.12582 2.74116L12.8847 6.50001L9.13123 10.2535C9.0177 10.361 8.92647 10.49 8.86278 10.6329C8.79774 10.7789 8.76277 10.9364 8.75995 11.0962C8.75713 11.256 8.78652 11.4147 8.84637 11.5629C8.90623 11.7111 8.99531 11.8457 9.10831 11.9587C9.22131 12.0717 9.35591 12.1608 9.50409 12.2206C9.65226 12.2805 9.81098 12.3099 9.97076 12.307C10.1305 12.3042 10.2881 12.2692 10.4341 12.2042C10.577 12.1405 10.7059 12.0493 10.8135 11.9358L15.4081 7.34116L15.4084 7.34094C15.6312 7.11782 15.7564 6.81536 15.7564 6.50001C15.7564 6.18466 15.6312 5.8822 15.4084 5.65908L15.4081 5.65886L10.8081 1.05886Z" fill="#21C4D1" stroke="#21C4D1"/>
-                    </svg>                  
-                      Why it works
-                </p>
-              </div>
-            </div>
-          </dt>
-          <dd class="more-info">
-            <div class="row">
-              <div class="onefifth">
-                &nbsp;
-                </div>
-                <div class="threefifth">
-            <p style="padding-top: 15px" class="desc">No matter how easy something is to do, most of us will only do it if it helps us to achieve something. By reminding you of your reasons for improving your creative thinking, we aim to bring your intentions closer to actions.  </p>
-            <p class="desc">The best habits are formed when you can see the clear links between a goal and an action.</p>
-            <p class="desc"> <a  class="link" target="_blank" href="https://thedecisionlab.com/reference-guide/psychology/intention-action-gap ">Read more about the intention gap</a>.</p>      
-          </div>
-          </dd>
-<!-- END REMIND YOURSELF WHY -->  
-<!-- CELEBRATE PROGRESS -->
-          <dt class="acc-box" role="heading">
-            <div class="row">
-              <div class="onefifth">
-                <img data-aos="fade-right" class="habit-icon" src="/src/img/celebrate-single.png" alt="illustration of a medal representing celebrate progress">
-              </div>
-              <div class="threefifth"><h3 class="tit">  Celebrate progress  </h3>
-                <p class="card-text">We’re more likely to change our behaviour if we feel good about it. We celebrate every step towards a new creative thinking habit, no matter how small.  </p>
-                <p class="card-text accord-link">
-                  <svg class="chevron" width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.8081 1.05886L10.8079 1.05864C10.5848 0.835789 10.2823 0.710617 9.96698 0.710617C9.65163 0.710617 9.34917 0.835789 9.12604 1.05864L9.47937 1.4124L9.1256 1.05908C8.90276 1.2822 8.77758 1.58466 8.77758 1.90001C8.77758 2.21536 8.90276 2.51782 9.1256 2.74094L9.12582 2.74116L12.8847 6.50001L9.13123 10.2535C9.0177 10.361 8.92647 10.49 8.86278 10.6329C8.79774 10.7789 8.76277 10.9364 8.75995 11.0962C8.75713 11.256 8.78652 11.4147 8.84637 11.5629C8.90623 11.7111 8.99531 11.8457 9.10831 11.9587C9.22131 12.0717 9.35591 12.1608 9.50409 12.2206C9.65226 12.2805 9.81098 12.3099 9.97076 12.307C10.1305 12.3042 10.2881 12.2692 10.4341 12.2042C10.577 12.1405 10.7059 12.0493 10.8135 11.9358L15.4081 7.34116L15.4084 7.34094C15.6312 7.11782 15.7564 6.81536 15.7564 6.50001C15.7564 6.18466 15.6312 5.8822 15.4084 5.65908L15.4081 5.65886L10.8081 1.05886Z" fill="#21C4D1" stroke="#21C4D1"/>
-                    </svg>                  
-                      Why it works
-                </p>
-              </div>
-            </div>
-          </dt>
-          <dd class="more-info">
-            <div class="row">
-              <div class="onefifth">
-                &nbsp;
-                </div>
-                <div class="threefifth">
-            <p style="padding-top: 15px" class="desc">We all want to celebrate success either because it satisfies us or teaches us something. Satisfaction rewards are easier to understand - we’ve all felt something that brings us contentment, both in the short and long term. </p>
-            <p class="desc">Rewards that teach us are things that make us remember actions for the future and help our brains distinguish useless actions from useful ones.</p>
-            <p class="desc"> <a  class="link" target="_blank" href="https://jamesclear.com/three-steps-habit-change">Read more about rewards</a>.</p>      
-        </div>
-          </dd>
-<!-- END CELEBRATE PROGRESS -->
-<!-- CHOOSE WHAT YOU DO -->
-          <dt class="acc-box" role="heading">
-            <div class="row">
-              <div class="onefifth">
-                <img data-aos="fade-right" class="habit-icon" src="/src/img/choose-single.png" alt="illustration of many circles representing choose what you do">
-            
-              </div>
-              <div class="threefifth"><h3 class="tit"> Choose what you do   </h3>
-                <p class="card-text">We give you the option to pick exercises that appeal to you so that you are the master of your own learning.  </p>
-                <p class="card-text accord-link">
-                  <svg class="chevron" width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.8081 1.05886L10.8079 1.05864C10.5848 0.835789 10.2823 0.710617 9.96698 0.710617C9.65163 0.710617 9.34917 0.835789 9.12604 1.05864L9.47937 1.4124L9.1256 1.05908C8.90276 1.2822 8.77758 1.58466 8.77758 1.90001C8.77758 2.21536 8.90276 2.51782 9.1256 2.74094L9.12582 2.74116L12.8847 6.50001L9.13123 10.2535C9.0177 10.361 8.92647 10.49 8.86278 10.6329C8.79774 10.7789 8.76277 10.9364 8.75995 11.0962C8.75713 11.256 8.78652 11.4147 8.84637 11.5629C8.90623 11.7111 8.99531 11.8457 9.10831 11.9587C9.22131 12.0717 9.35591 12.1608 9.50409 12.2206C9.65226 12.2805 9.81098 12.3099 9.97076 12.307C10.1305 12.3042 10.2881 12.2692 10.4341 12.2042C10.577 12.1405 10.7059 12.0493 10.8135 11.9358L15.4081 7.34116L15.4084 7.34094C15.6312 7.11782 15.7564 6.81536 15.7564 6.50001C15.7564 6.18466 15.6312 5.8822 15.4084 5.65908L15.4081 5.65886L10.8081 1.05886Z" fill="#21C4D1" stroke="#21C4D1"/>
-                    </svg>                  
-                      Why it works
-                </p>
-              </div>
-            </div>
-          </dt>
-          <dd class="more-info">
-            <div class="row">
-              <div class="onefifth">
-                &nbsp;
-                </div>
-                <div class="threefifth">
-                  <p style="padding-top: 15px" class="desc">It’s key to make sure any new habits are reasonable so you can maintain them. Key to this is being able to decide what actions you want to take on a day or a week, so they can fit into your life. For example, James Clear challenges you to scale down your habit to be something you can do in two minutes.  </p>
-                  <p class="desc">For example, if you want to regularly practice yoga, start by getting your mat out of the cupboard and rolling it out. This creates a narrative where the habit is established before it can be improved. </p>
-                  <p class="desc"> <a  class="link" target="_blank" href="https://jamesclear.com/how-to-stop-procrastinating">Read more about the two minute rule</a>.</p>                    
-            </div>
-          </dd>
-          <!-- END CHOOSE WHAT YOU DO -->
-          <!--  FIND ACCOUNTABILITY  -->
-          <dt class="acc-box" role="heading">
-            <div class="row">
-              <div class="onefifth">
-                <img data-aos="fade-right" class="habit-icon" src="/src/img/account-single.png" alt="illustration of speech bubbles representing find accountability">
-            
-              </div>
-              <div class="threefifth"><h3 class="tit"> Find accountablity    </h3>
-                <p class="card-text">Connect with other like-minded individuals to help each other achieve your goals  </p>
-                <p class="card-text accord-link">
-                  <svg class="chevron" width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.8081 1.05886L10.8079 1.05864C10.5848 0.835789 10.2823 0.710617 9.96698 0.710617C9.65163 0.710617 9.34917 0.835789 9.12604 1.05864L9.47937 1.4124L9.1256 1.05908C8.90276 1.2822 8.77758 1.58466 8.77758 1.90001C8.77758 2.21536 8.90276 2.51782 9.1256 2.74094L9.12582 2.74116L12.8847 6.50001L9.13123 10.2535C9.0177 10.361 8.92647 10.49 8.86278 10.6329C8.79774 10.7789 8.76277 10.9364 8.75995 11.0962C8.75713 11.256 8.78652 11.4147 8.84637 11.5629C8.90623 11.7111 8.99531 11.8457 9.10831 11.9587C9.22131 12.0717 9.35591 12.1608 9.50409 12.2206C9.65226 12.2805 9.81098 12.3099 9.97076 12.307C10.1305 12.3042 10.2881 12.2692 10.4341 12.2042C10.577 12.1405 10.7059 12.0493 10.8135 11.9358L15.4081 7.34116L15.4084 7.34094C15.6312 7.11782 15.7564 6.81536 15.7564 6.50001C15.7564 6.18466 15.6312 5.8822 15.4084 5.65908L15.4081 5.65886L10.8081 1.05886Z" fill="#21C4D1" stroke="#21C4D1"/>
-                    </svg>                  
-                      Why it works
-                </p>
-              </div>
-            </div>
-          </dt>
-          <dd class="more-info">
-            <div class="row">
-              <div class="onefifth">
-                &nbsp;
-                </div>
-                <div class="threefifth">
-                  <p style="padding-top: 15px" class="desc">We’ve all done it - signed up for the 10K and then wanted to drop out, but you couldn’t because you’d already told people you were doing it. It’s about feeling like you have a duty to others so you’re less likely to quit.   </p>
-                  <p class="desc"> Accountability is a great tool for making and breaking habits. It works best when it comes from the outside - i.e. from someone else.  </p>
-                  <p class="desc"> <a  class="link" target="_blank" href="https://gretchenrubin.com/2017/05/get-something-done-accountability">Read more about the accountability</a>.</p>      
-      </div>
-          </dd>
-<!-- END FIND ACCOUNTABILITY  -->
-        </dl>
-<!-- END ACCORDION -->
-
-    </div>
-    </section>
-
-    <section id="sign-up">
-      <div data-aos="fade-up" data-aos-delay="50"  class="container overflow">
-        <h2><span class="underline-3">Join our test team </span></h2>
-        <p class="sub-text">We are currently building our app and need pioneers to help test our product.
-        </p>
-        <p class="sub-text">
-          If you can give 45 minutes to play with our prototype, or want to be contacted about our next content test, sign up here. </p>
-          <p class="sub-text">The only price is your feedback! </p> 
-            <h3 style="color: var(--c-heading); padding: 0"> Sign up</h3>
-        <div class="Subscribe">
-          <form action="sub" name="signup" method="POST" data-netlify="true">
-           <div style="display:inline"> <input type="text" name="name" placeholder="First name" required >
-            <input type="text" name="surname" placeholder="Surname" required ></div>
-            <input type="text" name="company" placeholder="Company Name (optional)">
-            <input  type="text" name="email" class="email-input" placeholder="Email Address" required /> <br>
-                    <button type="submit">Sign up</button> 
-        </form>
-          <div class="Loading">
-            <div class="LoadingDot"></div>
-            <div class="LoadingDot"></div>
-            <div class="LoadingDot"></div>
-            <div class="LoadingDot"></div>
-            <span>Subscribing</span>
-          </div>
-          <div class="Complete">
-            <div class="Tick">
-              <svg width="32px" height="25px" viewBox="0 0 32 25">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Artboard" transform="translate(-384.000000, -217.000000)" fill-rule="nonzero" fill="#FFFFFF">
-                    <g id="Group" transform="translate(360.000000, 189.000000)">
-                      <path d="M27.4142136,40.5857864 C26.633165,39.8047379 25.366835,39.8047379 24.5857864,40.5857864 C23.8047379,41.366835 23.8047379,42.633165 24.5857864,43.4142136 L34,52.8284271 L55.4142136,31.4142136 C56.1952621,30.633165 56.1952621,29.366835 55.4142136,28.5857864 C54.633165,27.8047379 53.366835,27.8047379 52.5857864,28.5857864 L34,47.1715729 L27.4142136,40.5857864 Z" id="Path-2"></path>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <h3 style="color: var(--c-lilac);margin-left:auto;margin-right:auto"> All signed up 🎉</h3>
-            <span class="sub-text">We'll be in touch soon!</span>
-          </div>
-        </div>
-        <small>By signing up you agree to recieve emails and updates from us about Great Minds.</small>
-      </div>
-      
-      </div>
-    </section>
-
-    <!-- <div class="to-top-button-wrapper">
-      <a href="#top" class="to-top-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#7B94AA" viewBox="0 0 256 256">
-              <rect width="256" height="256" fill="none"></rect>
-              <polyline points="136 80 88 32 40 80" fill="none" stroke="#7B94AA" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
-              <path d="M200,80v88a56,56,0,0,1-56,56h-.00011A55.99988,55.99988,0,0,1,88,168.00011V32" fill="none" stroke="#7B94AA" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-          </svg>
-      </a>
-  </div> -->
-    
-
-    <footer class="site-footer">
-  <div class="container">
-    <div class="row">
-        <div class="half">
-          <div class="gm-brain">
-          <svg width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.0144 7.6677C25.389 3.71899 18.0451 2.66032 18.4599 5.97305C18.5459 6.65982 18.753 7.01703 19.1272 7.08777C19.8972 7.23219 20.2717 6.51013 19.9889 5.89441C18.7068 3.10339 11.4139 2.65859 12.6259 6.90443C12.9625 8.08352 14.6539 8.00341 14.3439 6.66881C13.1025 3.08832 7.2264 5.09472 8.19229 9.5937C8.41835 10.6466 8.91466 11.3919 9.5096 11.3464C10.3463 11.2823 10.7225 10.18 9.9403 9.79248C6.43232 8.05424 2.36343 12.5847 5.43532 14.6422C6.42703 15.3065 7.44941 14.0873 6.38866 13.3863C3.69385 11.6056 0.375035 19.1008 5.44504 19.267C6.47489 19.3008 7.01874 18.526 6.50386 17.8715C6.06249 17.3105 5.32967 17.3324 4.78543 18.1071C4.0383 19.1705 3.93795 19.9893 4.39062 21.0618C5.19441 22.9663 9.47698 22.9115 9.67752 21.3227C9.75616 20.9034 9.33118 20.5048 8.86919 20.4182C7.91359 20.2551 7.56016 21.4479 7.58417 22.1698C8.09402 26.2507 12.6172 25.494 13.383 23.9748C13.5717 23.5314 13.5852 22.8969 12.9805 22.7037C12.1294 22.485 11.8789 23.3739 11.7427 23.9748C11.5662 24.7536 11.6731 25.4985 12.3718 25.9487C12.6993 26.1596 13.0188 26.3625 13.392 26.4825C13.9041 26.6472 13.7447 26.5021 13.6989 26.8933C13.6158 27.604 13.858 29.1219 14.4805 29.4721C14.8376 29.673 15.329 29.8886 15.4462 29.468C15.6481 26.8879 16.4485 26.2327 18.7096 26.0023C20.8472 25.6421 21.7241 25.0016 22.1303 23.6584C22.2935 23.1229 22.2511 22.5145 22.209 21.9638C22.1781 21.5609 21.9878 21.0316 21.7238 20.7263C20.8521 19.7184 19.818 20.9685 20.8733 22.0388C23.4382 24.4752 27.173 22.5124 26.8633 20.7713C26.8432 20.5087 26.5804 19.7792 26.3 19.4241C25.3758 18.2537 24.1949 19.4504 25.0003 20.2556C28.4244 23.6792 31.7544 19.6585 30.5898 17.3678C30.5898 17.3678 30.0992 16.1598 29.2232 16.155C28.3472 16.1501 28.1202 17.9342 30.143 18.0769C35.0452 18.6223 34.878 8.52771 29.2185 10.6544C28.0866 11.0797 28.1305 12.4338 29.3776 12.358C30.2279 12.3063 30.8628 11.4765 30.8031 10.6967C30.8976 8.30598 28.1127 5.07748 24.3161 6.17804C23.6009 6.38538 23.0162 7.4561 23.5653 8.07792C23.9718 8.53833 24.8125 8.58746 25.0144 7.6677Z" stroke="white" stroke-width="1.09676" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>           
-            </div>
-            Great Minds 
-            <br>
-            <br> Contact us:  <a class="footer-link" href="mailto:hello@greatminds.space">hello@greatminds.space</a>
-        </div>
-        <div class="half">
-          <!-- <div class="social-media">
-            <a class="social-media-link" href="https://twitter.com/creategreatminds"><span style="display:none"> Go to Twitter page for Great Minds - opens in a new tab</span><svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M23.643 4.937C22.808 5.307 21.911 5.557 20.968 5.67C21.941 5.08779 22.669 4.17147 23.016 3.092C22.1019 3.63499 21.1014 4.0172 20.058 4.222C19.3564 3.47287 18.4271 2.97633 17.4143 2.80947C16.4016 2.64262 15.3621 2.81479 14.4572 3.29925C13.5524 3.78371 12.8328 4.55336 12.4102 5.4887C11.9875 6.42405 11.8855 7.47275 12.12 8.472C10.2677 8.379 8.45564 7.89755 6.80144 7.05891C5.14723 6.22026 3.68785 5.04316 2.51801 3.604C2.11801 4.294 1.88801 5.094 1.88801 5.946C1.88757 6.713 2.07644 7.46824 2.43789 8.14473C2.79934 8.82122 3.32217 9.39804 3.96001 9.824C3.22029 9.80046 2.49688 9.60058 1.85001 9.241V9.301C1.84994 10.3767 2.22204 11.4194 2.90319 12.252C3.58434 13.0846 4.53258 13.6559 5.58701 13.869C4.9008 14.0547 4.18135 14.0821 3.48301 13.949C3.78051 14.8746 4.36001 15.684 5.14038 16.2639C5.92075 16.8438 6.86293 17.1652 7.83501 17.183C6.18485 18.4784 4.1469 19.1811 2.04901 19.178C1.67739 19.1781 1.30609 19.1564 0.937012 19.113C3.06649 20.4822 5.54535 21.2088 8.07701 21.206C16.647 21.206 21.332 14.108 21.332 7.952C21.332 7.752 21.327 7.55 21.318 7.35C22.2293 6.69097 23.0159 5.8749 23.641 4.94L23.643 4.937V4.937Z" fill="white"/>
-              </svg>
-            </a>          
-            <a class="social-media-link" href="https://www.instagram.com/greatminds.space/">    
-              <span style="display:none"> Go to Instagram page for page for Great Minds  - opens in a new tab </span><svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.9471 8.305C20.937 7.54763 20.7952 6.79778 20.5281 6.089C20.2964 5.49115 19.9426 4.9482 19.4892 4.49483C19.0359 4.04147 18.4929 3.68765 17.8951 3.456C17.1954 3.19336 16.4562 3.05134 15.7091 3.036C14.7471 2.993 14.4421 2.981 12.0001 2.981C9.55807 2.981 9.24507 2.981 8.29007 3.036C7.54323 3.05146 6.80442 3.19347 6.10507 3.456C5.50713 3.68749 4.96409 4.04125 4.5107 4.49464C4.05732 4.94802 3.70356 5.49106 3.47207 6.089C3.2089 6.78814 3.06719 7.52711 3.05307 8.274C3.01007 9.237 2.99707 9.542 2.99707 11.984C2.99707 14.426 2.99707 14.738 3.05307 15.694C3.06807 16.442 3.20907 17.18 3.47207 17.881C3.70395 18.4788 4.05797 19.0216 4.51151 19.4748C4.96505 19.928 5.50813 20.2816 6.10607 20.513C6.8035 20.7862 7.54244 20.9384 8.29107 20.963C9.25407 21.006 9.55907 21.019 12.0011 21.019C14.4431 21.019 14.7561 21.019 15.7111 20.963C16.4582 20.9483 17.1974 20.8066 17.8971 20.544C18.4948 20.3121 19.0376 19.9582 19.4909 19.5048C19.9442 19.0515 20.2982 18.5087 20.5301 17.911C20.7931 17.211 20.9341 16.473 20.9491 15.724C20.9921 14.762 21.0051 14.457 21.0051 12.014C21.0031 9.572 21.0031 9.262 20.9471 8.305V8.305ZM11.9941 16.602C9.44007 16.602 7.37107 14.533 7.37107 11.979C7.37107 9.425 9.44007 7.356 11.9941 7.356C13.2202 7.356 14.396 7.84307 15.263 8.71005C16.13 9.57703 16.6171 10.7529 16.6171 11.979C16.6171 13.2051 16.13 14.381 15.263 15.248C14.396 16.1149 13.2202 16.602 11.9941 16.602V16.602ZM16.8011 8.263C16.6595 8.26313 16.5192 8.23534 16.3884 8.18121C16.2575 8.12709 16.1386 8.04769 16.0385 7.94756C15.9384 7.84743 15.859 7.72854 15.8049 7.59769C15.7507 7.46684 15.7229 7.3266 15.7231 7.185C15.7231 7.0435 15.7509 6.90339 15.8051 6.77266C15.8592 6.64193 15.9386 6.52315 16.0387 6.4231C16.1387 6.32304 16.2575 6.24367 16.3882 6.18952C16.519 6.13537 16.6591 6.1075 16.8006 6.1075C16.9421 6.1075 17.0822 6.13537 17.2129 6.18952C17.3436 6.24367 17.4624 6.32304 17.5625 6.4231C17.6625 6.52315 17.7419 6.64193 17.7961 6.77266C17.8502 6.90339 17.8781 7.0435 17.8781 7.185C17.8781 7.781 17.3961 8.263 16.8011 8.263Z" fill="white"/>
-                  <path d="M11.9942 14.982C13.6527 14.982 14.9972 13.6375 14.9972 11.979C14.9972 10.3205 13.6527 8.976 11.9942 8.976C10.3357 8.976 8.99121 10.3205 8.99121 11.979C8.99121 13.6375 10.3357 14.982 11.9942 14.982Z" fill="white"/>
-                  </svg>
-            </a>
-            <a class="social-media-link" href="https://www.linkedin.com/company/greatmindsorg/"> <span style="display:none"> Go to LinkedIn page for Great Minds  - opens in a new tab </span>
-              <svg class="social-media-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2.838C1 2.35053 1.19365 1.88303 1.53834 1.53834C1.88303 1.19364 2.35053 0.999999 2.838 0.999999H21.16C21.4016 0.999604 21.6409 1.04686 21.8641 1.13907C22.0874 1.23127 22.2903 1.36661 22.4612 1.53733C22.6322 1.70806 22.7677 1.91082 22.8602 2.13401C22.9526 2.35719 23.0001 2.59642 23 2.838V21.16C23.0003 21.4016 22.9529 21.6409 22.8606 21.8642C22.7683 22.0875 22.6328 22.2904 22.462 22.4613C22.2912 22.6322 22.0884 22.7678 21.8651 22.8602C21.6419 22.9526 21.4026 23.0001 21.161 23H2.838C2.59655 23 2.35746 22.9524 2.1344 22.86C1.91134 22.7676 1.70867 22.6321 1.53798 22.4613C1.3673 22.2905 1.23193 22.0878 1.13962 21.8647C1.04731 21.6416 0.999869 21.4025 1 21.161V2.838ZM9.708 9.388H12.687V10.884C13.117 10.024 14.217 9.25 15.87 9.25C19.039 9.25 19.79 10.963 19.79 14.106V19.928H16.583V14.822C16.583 13.032 16.153 12.022 15.061 12.022C13.546 12.022 12.916 13.111 12.916 14.822V19.928H9.708V9.388ZM4.208 19.791H7.416V9.25H4.208V19.79V19.791ZM7.875 5.812C7.88105 6.08667 7.83217 6.35979 7.73124 6.61531C7.63031 6.87084 7.47935 7.10363 7.28723 7.30003C7.09511 7.49643 6.8657 7.65247 6.61246 7.75901C6.35921 7.86554 6.08724 7.92042 5.8125 7.92042C5.53776 7.92042 5.26579 7.86554 5.01255 7.75901C4.7593 7.65247 4.52989 7.49643 4.33777 7.30003C4.14565 7.10363 3.99469 6.87084 3.89376 6.61531C3.79283 6.35979 3.74395 6.08667 3.75 5.812C3.76187 5.27285 3.98439 4.75979 4.36989 4.38268C4.75539 4.00558 5.27322 3.79442 5.8125 3.79442C6.35178 3.79442 6.86961 4.00558 7.25512 4.38268C7.64062 4.75979 7.86313 5.27285 7.875 5.812V5.812Z" fill="white"/>
-                </svg>
-                
-            </a> -->
-          </div>
-
-        </div>
-
-    </div>
-  </div>
-</footer>
-
-    
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="module">
   AOS.init();
 </script>
+
 
   </body>
 </html>

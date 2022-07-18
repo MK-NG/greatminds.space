@@ -1,64 +1,33 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   overflow-x: hidden;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Kollektif', sans-serif;
   font-size: 16px;
   align-items: center;
   min-height: 85vh;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--c-bg)
+  background-color: var(--c-navy)
   
 }
 
-.container {
-  max-width: 60em;
-  margin: 0 auto;
-  padding: 0 2em;
-}
-
-.more-width {
-  max-width: 90em !important;
-  padding: 20px;
-  margin-left:auto;
-  margin-right:auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
 
 
-}
 
-.icon-image {
-  padding:2em;
-  @include respond(phone){
-    max-height: 75px;
-    padding: .5em;
-    padding-right: 2em;
-    min-width: 50px;
-    }
-}
 
-p {
-  line-height: 1.7em;
-  font-size: 1.4em;
-  padding-bottom: 1em;
-  @include respond(phone){
-    line-height: 1.5em;
-    font-size: 1.2em;
-  }
-  margin: 0;
-  color: var(--c-text);
-}
 
-.expl {
-  color: var(--c-text);
-  font-size: 1.4em;
-  @include respond(phone){
-    display: flex;
-justify-content: center; /* align horizontal */
-align-items: center; /* align vertical */
-  }
-}
+
+
 
 .intro {
   padding-left: 8px;
@@ -72,203 +41,6 @@ align-items: center; /* align vertical */
 }
   color: var(--c-text);
 }
-
-.reasons{
- margin-top:0px;
-
-}
-#about {
-  padding: 2.5em 0;
-  background-color: var(--c-bg-secondary);
-  // background: linear-gradient(90grad, var(--c-bg-secondary), rgb(206, 218, 238));
-  border-top: 2px dashed var(--c-grey);
-  border-bottom: 2px dashed var(--c-grey);
-}
-
-#how-we-can-help {
-  padding: 2.5em 0;
-  border-bottom: 2px dashed var(--c-grey);
-
- 
-}
-
-#top {
-  padding-left: 10px
-}
-
-#sign-up {
-  min-height: 30em;
-  padding: 2.5em 0;
-  background-color: var(--c-bg-secondary);
-}
-
-#intro {
-  padding-bottom: 50px;
-  padding-top: 70px;
-  border-top: 2px dashed var(--c-grey)
-}
-
-.half {
-  box-sizing: border-box;
-  width: 100%;
-  @include on-breakpoint(tablet-up) {
-    width: 45%;
-    float: left;
-    margin-right: 35px;
-}
-}
-
-.onethird {
-  box-sizing: border-box;
-  width: 100%;
-  @include on-breakpoint(tablet-up) {
-    width: 30%;
-    float: left;
-    margin-right: 35px;
-}
-}
-.twothird {
-  box-sizing: border-box;
-  width: 100%;
-  @include on-breakpoint(tablet-up) {
-    width: 60%;
-    float: left;
-    margin-right: 35px;
-}
-}
-
-.onefifth {
-  box-sizing: border-box;
-  width: 100%;
-  display: inline-flex;
-  @include on-breakpoint(tablet-up) {
-    text-align:center;
-    width: 20%;
-    display: block;
-    float: left;
-}
-}
-
-.row-heading {
-  padding-top: 17vh;
-  @include respond(phone) {
-    padding-top:10vh;
-}
-}
-
-.threefifth {
-  box-sizing: border-box;
-  width: 100%;
-  @include on-breakpoint(tablet-up) {
-    padding-left: 35px;
-    text-align:center;
-    width: 70%;
-    display: block;
-    float: left;
-}
-}
-
-.team-icon {
-  margin-right: 20px;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-  margin-top: 20px
-}
-
-.habit-icon {
-  padding-top: 25px;
-  display:block;
-  margin-left:auto !important;
-  margin-right: auto !important;
-  max-width: 80%;
-  @include respond(phone){
-    max-height: 200px;
-    padding-top: 0px;
-  }
-}
-
-.padding-top-m {
-  padding-top: 50px;
-}
-
-
-.overflow {
-  overflow-x: hidden;
-}
-
-
-.slogan {
-  margin-bottom: 75px;
-  margin-top: 50px;
-  font-size: 50px;
-  font-weight: bold;
-  max-width: 315px;
-  color: var(--c-teal);
-  line-height:0.8em;
-  margin-left:auto;
-  margin-right: auto;
-  @include on-breakpoint(tablet-up) {
-    padding-left: 50px;
-    margin-top: 25%;
-    max-width: 443px;
-    font-size: 60px;
-
-
-}
-}
-
-.optional {
-  -webkit-text-stroke: 2px var(--c-text);
-  color: var(--c-bg-secondary);
-
-}
-
-
-.optional{
-  position: relative;
-  display: inline-block; 
-  text-decoration: none; 
-
-}
-
-.optional:after {
-  content: ""; 
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: calc(45%); 
-  border-top: 6px solid var(--c-orange);
-}
-
-.cta {
-  border: 3px solid var(--c-black);
-  color: var(--c-text);
-  padding: .5em 1em;
-  font-size: 1.5em;
-  background: none;
-  margin-left: 8px;
-  border-radius: 10px; 
-  cursor: pointer;
-  &:hover, &:focus {
-  background: rgba(0, 0, 0, 0.065);
-  }
-
-}
-
-
-.see-more:hover{
-    fill: rgba(0, 0, 0, 0.065);
-  }
-
-  .see-more {
-    @include respond(phone) {
-      max-height: 30px;
-    }
-  }
 
 
 .continue {
