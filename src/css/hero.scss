@@ -5,7 +5,7 @@
   -moz-transform: scale(0.5);
   left: -70px;
   @include respond(phone) {
-    left:0px;
+    left:25px;
     zoom: 0.3;
     -moz-transform: scale(0.3);
   }
@@ -128,7 +128,7 @@
     left: 20px;
     @include respond(phone) { 
       font-size: 1em;
-      top: -170px;
+      top: -120px;
       left: 30px;
       width: 345px;
      }
