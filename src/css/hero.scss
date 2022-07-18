@@ -102,10 +102,10 @@
   position: relative;
   top: 115px;
   @include respond(phone) {   
-    zoom: 0.3;
-    -moz-transform: scale(0.3);
-    top: 140px;
-    left: -220px;
+    // zoom: 0.3;
+    // -moz-transform: scale(0.3);
+    // top: 140px;
+    // left: -220px;
   }
 
 }
