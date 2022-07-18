@@ -3,7 +3,9 @@
   zoom: 0.5;
   -moz-transform: scale(0.5);
   @include respond(phone) {
-    left:100px;
+    margin-top: 50vh;
+    position: relative;
+    left:60px;
     zoom: 0.3;
     -moz-transform: scale(0.3);
   }
