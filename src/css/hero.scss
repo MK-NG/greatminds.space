@@ -1,20 +1,22 @@
 #animation{
   height: 600px;
+  box-sizing: border-box;
   zoom: 0.5;
   -moz-transform: scale(0.5);
+
   @include respond(phone) {
-    margin-top: 30vh;
     position: relative;
-    left:55px;
     zoom: 0.3;
     -moz-transform: scale(0.3);
   }
 }
 
 .hero {
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .brain-1{
@@ -113,15 +115,15 @@
           animation-fill-mode: backwards;
         }
 
-        .title{
-          animation-name: animate-fade;
-          animation-duration: 1.5s;
-          animation-delay: 1.1s;
-          animation-fill-mode: backwards;
-          position: absolute;
-          top: -50px;
-          left: 310px;
-        } 
+.title{
+  animation-name: animate-fade;
+  animation-duration: 1.5s;
+  animation-delay: 1.1s;
+  animation-fill-mode: backwards;
+  position: absolute;
+  top: -50px;
+  left: 310px;
+} 
       
          
 
