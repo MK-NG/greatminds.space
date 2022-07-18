@@ -8,7 +8,6 @@ h1 {
   font-size: 130px;
   font-weight: 900;
   line-height: 0.8;
-  margin-top: 175px;
   @include respond(phone) {   
    font-size: 80px;
    -webkit-text-stroke-width: 1px;

@@ -100,9 +100,9 @@
   transform: scale(0.5);
   left: -250px;
   position: relative;
-  top: 115px;
+  top: -60px;
   @include respond(phone) {   
-    top: 153px;
+    top: -20px;
     left: -215px;
     transform: scale(0.28);
   }
@@ -110,10 +110,13 @@
 }
 
 .gm-logo {
+  margin-top: 175px;
   position: relative;
   left: 90px;
   @include respond(phone) {   
     left: 120px;
+     margin-top: 150px;
+
   
   }
 }
