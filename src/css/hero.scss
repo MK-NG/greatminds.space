@@ -5,7 +5,7 @@
   @include respond(phone) {
     margin-top: 30vh;
     position: relative;
-    left:60px;
+    left:55px;
     zoom: 0.3;
     -moz-transform: scale(0.3);
   }
@@ -134,8 +134,8 @@
     top: 155px;
       @include respond(phone) {   
       font-size: 1em;
-      top: 235px;
-      left: 30px;
+      top: 230px;
+      left: 35px;
       width: 345px;
      }
     }    
