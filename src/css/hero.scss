@@ -6,6 +6,8 @@
   left: -70px;
   @include respond(phone) {
     left:0px;
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
     -moz-transform: scale(0.3)translate(-75%, -50%);
     transform: scale(0.3)translate(-75%, -50%)
   }
