@@ -5,11 +5,14 @@ h1 {
   -webkit-text-stroke-color: var(--c-white);
   -webkit-text-stroke-width: 4px;
   font-family: Work Sans;
-  font-size: 250px;
+  font-size: 130px;
   font-weight: 900;
-  line-height: 80%;
-  position: absolute; 
+  line-height: 0.8;
   margin-top: 175px;
+  @include respond(phone) {   
+   font-size: 80px;
+   -webkit-text-stroke-width: 2px;
+  }
 }
 
 h2 {

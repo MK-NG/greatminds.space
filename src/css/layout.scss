@@ -6,21 +6,12 @@
 }
 
 body {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow-x: hidden;
   font-family: 'Kollektif', sans-serif;
   font-size: 16px;
-  align-items: center;
   -webkit-font-smoothing: antialiased;
   background-color: var(--c-white)
 }
 
-header {
-  width: 100%;
-}
 
 .centre {
   text-align: center;
@@ -31,6 +22,12 @@ header {
   border-bottom: 10px solid var(--c-lilac);
   background-color: var(--c-navy);
   height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
 
 }
 
