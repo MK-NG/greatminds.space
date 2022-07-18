@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Work+Sans:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 @font-face {
-  font-family: "Kollekif";
-  src: url("../fonts/Kollektif-Bold.ttf") format("truetype"),
-       url("../fonts/Kollektif.ttf") format("truetype"),
-       url("../fonts/Kollektif-Bold.woff") format("woff"),
-       url("../fonts/Kollektif.woff") format("woff"),
-       url("../fonts/Kollektif.woff2") format("woff2");
+  font-family: 'Kollektif';
+  src: url('../fonts/Kollektif.woff2') format('woff2'),
+      url('../fonts/Kollektif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Kollektif';
+  src: url('../fonts/Kollektif-Bold.woff2') format('woff2'),
+      url('../fonts/Kollektif-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 
 :root {
