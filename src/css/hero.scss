@@ -102,10 +102,9 @@
   position: relative;
   top: 115px;
   @include respond(phone) {   
-    // zoom: 0.3;
-    // -moz-transform: scale(0.3);
-    // top: 140px;
-    // left: -220px;
+    top: 153px;
+    left: -215px;
+    transform: scale(0.28);
   }
 
 }
@@ -113,6 +112,10 @@
 .gm-logo {
   position: relative;
   left: 90px;
+  @include respond(phone) {   
+    left: 120px;
+  
+  }
 }
   .title{
     animation-name: animate-fade;
@@ -133,6 +136,7 @@
     left: -7px;
     top: 30px;
       @include respond(phone) {   
+        left: 10px;
       font-size: 1em;
       width: 345px;
      }
