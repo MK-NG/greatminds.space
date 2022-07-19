@@ -7,9 +7,18 @@
 
 body {
   font-family: 'Kollektif', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   background-color: var(--c-white)
+}
+
+p {
+  font-size: 18px;
+font-weight: 400;
+letter-spacing: .01em;
+line-height: 28px;
+padding-bottom: 20px;
+text-transform: none;
 }
 
 
@@ -17,36 +26,87 @@ body {
   text-align: center;
 }
 
+.main {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 0 2em;
+}
 
-#top {
-  border-bottom: 10px solid var(--c-lilac);
-  background-color: var(--c-navy);
-  height: 100vh;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow-x: hidden;
-  align-items: center;
+.layout-half {
+  padding-top:20px;
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    width: 45%;
+    float: left;
+    margin-right: 35px;
+}
+}
 
+.layout-one-third {
+  padding-top:20px;
+
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    width: 30%;
+    float: left;
+    margin-right: 35px;
+}
+}
+.layout-two-thirds {
+  padding-top:20px;
+
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    width: 60%;
+    float: left;
+    margin-right: 35px;
+}
+}
+
+.layout-one-fifth {
+  padding-top:20px;
+
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-flex;
+  @include on-breakpoint(tablet-up) {
+    text-align:center;
+    width: 20%;
+    display: block;
+    float: left;
+}
 }
 
 
 
+.layout-three-fifths {
+  padding-top:20px;
 
-.intro {
-  padding-left: 8px;
-  line-height: 2em;
-  font-family: var(--font-family-tertiary);
-  font-size: 1.6em;
-  max-width: 420px;
-  padding-top: 20px;
-  @include respond(phone){
-  font-size: 1.4em;
+  box-sizing: border-box;
+  width: 100%;
+  @include on-breakpoint(tablet-up) {
+    padding-left: 35px;
+    text-align:center;
+    width: 70%;
+    display: block;
+    float: left;
 }
-  color: var(--c-text);
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+  margin-top: 20px
 }
 
 
-
-
+.intro-paragraph {
+  padding-top: 45px;
+  @include respond(phone) {   
+    padding-top: 0px;
+   }
+}
