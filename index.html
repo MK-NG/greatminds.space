@@ -84,13 +84,13 @@
                   </div>
                    
 
-                <div class="layout-two-thirds">
+                <div class="layout-two-thirds s-padding-top">
                   <div class="intro-paragraph">
-                  <p> In today's world problems are more <strong>complex</strong> and <strong>opportunities more uncertain</strong>.</p> <p> Existing solutions are <strong>failing to address</strong> this skills gap. Workshops and <strong>short courses</strong> just <strong>don't work</strong>. </p> 
+                  <p> In today's world problems are more <strong>complex</strong> and <strong>opportunities more uncertain</strong>.</p> <p> Existing solutions to solve this <strong>skills gap</strong> are failing. Workshops and short courses just <strong>don't work</strong>. </p> 
                   <p> Creative thinking is a set of <strong>behaviours that need</strong> to be  <strong>continuously practised</strong> and <strong> performed</strong>. </p>
                   </div>
                   </div>
-                  <div class="layout-one-third">
+                  <div class="layout-one-third s-padding-top">
                     <canvas id="scene"></canvas>
                     </div>
               </div>
@@ -103,15 +103,55 @@
 
             <h2 class="great-minds-heading">Great Minds</strong> is a playground for creative thinking </h2>
 
-                  <p> Using the science of how humans build habits we have created a platform to help businesses <strong>transform</strong> how their organisation  <strong>understands and practices creative thinking</strong>. </p>
-                
+                  <p> Using the science of how humans <strong>build habits</strong> we have created a platform to help businesses <strong>transform</strong> how their organisation  <strong>understands and practices creative thinking</strong>. </p>
+                        <p>   <a class="learn-more button" href="habits.html" role="button">
+                                  <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                  </span>
+                                  <span class="button-text">How it works</span>
+                                </button>
 
  </div>
  </div>
 
- <div id="parts"> 
+ <div id="sign-up"> 
    <div class="centre">
-      <h2><span class="section-title" style="float:right"> Coming soon.   </span> </h2>
+      <h2><span class="section-title"> Coming soon   </span> </h2>
+      <p> Take part in shaping Great Minds by signing up to our exclusive Beta and telling us what you think.  The feedback that you provide will help us create the best version of Great Minds.  </p>
+        <div class="Subscribe">
+          <form action="sub" name="signup" method="POST" data-netlify="true">
+           <div style="display:inline"> <input type="text" name="name" placeholder="First name" required >
+            <input type="text" name="surname" placeholder="Surname" required ></div>
+            <input type="text" name="company" placeholder="Company Name (optional)">
+            <input  type="text" name="email" class="email-input" placeholder="Email Address" required /> <br>
+                    <button type="submit">Sign up</button> 
+        </form>
+          <div class="Loading">
+            <div class="LoadingDot"></div>
+            <div class="LoadingDot"></div>
+            <div class="LoadingDot"></div>
+            <div class="LoadingDot"></div>
+            <span>Subscribing</span>
+          </div>
+          <div class="Complete">
+            <div class="Tick">
+              <svg width="32px" height="25px" viewBox="0 0 32 25">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Artboard" transform="translate(-384.000000, -217.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                    <g id="Group" transform="translate(360.000000, 189.000000)">
+                      <path d="M27.4142136,40.5857864 C26.633165,39.8047379 25.366835,39.8047379 24.5857864,40.5857864 C23.8047379,41.366835 23.8047379,42.633165 24.5857864,43.4142136 L34,52.8284271 L55.4142136,31.4142136 C56.1952621,30.633165 56.1952621,29.366835 55.4142136,28.5857864 C54.633165,27.8047379 53.366835,27.8047379 52.5857864,28.5857864 L34,47.1715729 L27.4142136,40.5857864 Z" id="Path-2"></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h3 style="color: var(--c-teal);margin-left:auto;margin-right:auto"> All signed up 🎉</h3>
+            <span class="sub-text">We'll be in touch soon!</span>
+          </div>
+        </div>
+        <small>By signing up you agree to recieve emails and updates from us about Great Minds.</small>
+      </div>
+    
       </div>
       <p> 
         <br>
@@ -124,8 +164,11 @@
 </div>
 
 
+
    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script defer src="src/js/form.js" type="module"></script>
+    <script defer src="src/js/globe.js" type="module"></script>
 <script type="module">
   AOS.init();
 </script>

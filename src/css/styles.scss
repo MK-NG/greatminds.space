@@ -34,3 +34,162 @@ color: white;
   padding-top: 100px;
 
 }
+
+#sign-up {
+  padding-top: 100px;
+}
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+
+
+.button {
+  margin-left: 70px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.learn-more {
+    width: 13em;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--c-lilac);
+      border: 2px solid var(--c-white);
+      border-radius: 4px;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: var(--c-white);
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          left: 0.3rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid var(--c-white);
+            border-right: 0.125rem solid var(--c-white);
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1rem;
+      color: var(--c-white);
+      line-height: 1;
+      text-align: center;
+      inline-size: 180px;
+      font-weight: 600;
+    }
+  }
+  &:hover, &:focus {
+    .circle {
+      width:80%;
+      .icon {
+        &.arrow {
+        background: var(--c-white);
+        transform: translate(.8rem, 0);
+        }
+      }
+    }
+    .button-text {
+      left: 10px;
+      color: var(--c-white);
+
+    }
+  }
+}
+
+.see-more {
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+    fill: #344552;
+  }
+    &:focus {
+      outline: none;
+      border-bottom: 5px solid var(--c-lilac);    
+    }
+  
+}
+
+
+.left-align {
+  text-align: left;
+}
+
+.mockups {
+  margin-top: 50px;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  @include respond(phone) {   
+   max-width: 100%;
+   padding-top: 0px
+   }
+}
+
+.back-link {
+  color: var(--c-lilac);
+  text-decoration: none;
+  font-size: 1rem;
+line-height: 1.25;
+-moz-osx-font-smoothing: grayscale;
+text-decoration: underline;
+  text-decoration-thickness: auto;
+text-decoration-thickness: max(1px, .0625rem);
+text-underline-offset: 0.1em;
+display: inline-block;
+position: relative;
+margin-top: 15px;
+margin-bottom: 15px;
+padding-left: 14px;
+  &:hover, &:focus {
+    text-decoration-thickness: max(3px, .1875rem, .12em);
+-webkit-text-decoration-skip-ink: none;
+text-decoration-skip-ink: none;
+-webkit-text-decoration-skip: none;
+text-decoration-skip: none;
+color: #45278A;
+text-decoration: underline;
+  }
+}
+
+
+.highlight {
+  background-color: var(--c-lilac);
+  color: var(--c-white);
+  font-weight: 600;
+  padding: 5px; 
+}

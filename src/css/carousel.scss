@@ -1,0 +1,52 @@
+.card {
+    padding: 25px;
+    margin: 50px;
+    @include respond(phone) {   
+      min-width: none;
+       }
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    // height: 450px !important; 
+    margin-right: 10px;
+
+}
+
+
+
+
+.card-title {
+    text-align: center;
+    background-image: linear-gradient(120deg, var(--c-pink) 0%, var(--c-pink) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.25em;
+    background-position: 0 88%;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-text {
+    padding-top: 20px;
+}
+
+
+.link {
+    color: var(--c-teal);
+    text-decoration: none;
+    padding: 10px 20px; 
+    display: flex;
+    width: fit-content;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out,-o-transform .2s ease-in-out;
+&:hover {
+    transform:translate(20px,0px);
+    background-color: azure;
+}
+}
+
+.link-arrow {
+    padding-right: 5px;
+}
